@@ -1,7 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import './theme';
 
+
+/******************************************************************************Theme*************************************************************************/
+@import '~@angular/material/theming';
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker hue.
+$app-primary: mat-palette($mat-indigo);
+$app-accent: mat-palette($mat-green);
+
+// The warn palette is optional (defaults to red).
+$app-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+/******************************************************************************Theme*************************************************************************/
+
+
+/******************************************************************************break Points*************************************************************************/
+// Breakpoints
+$handset: 360px;
+$large-handset: 480px;
+$tablet: 640px; /* app drawer breakpoint */
+$large-tablet: 840px;
+$desktop: 960px;
+$large-desktop: 1280px;
+$x-large-desktop: 1440px;
+$xx-large-desktop: 1920px;
+
+// generate min-width breakpoint
+@mixin breakpoint($point) {
+  @media (min-width: $point) { @content ; }
+}
+// generate max-width breakpoint (use sparingly)
+@mixin breakpoint-max($point) {
+  @media (max-width: $point) { @content ; }
+}
+// generate min-height breakpoint
+@mixin height-breakpoint($point) {
+  @media (min-height: $point) { @content ; }
+}
+// generate max-height breakpoint (use sparingly)
+@mixin height-breakpoint-max($point) {
+  @media (min-height: $point) { @content ; }
+}
+/******************************************************************************Break Points*************************************************************************/
+
+
+
+
+
+/******************************************************************************Main CSS*************************************************************************/
 // Include the base styles for Angular Material core. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -22,7 +71,5 @@ a {
   text-decoration-color: mat-color($app-primary);
   color: mat-color($app-primary);
 }
-
-
-@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import url( 'https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons');
+/******************************************************************************Global CSS*************************************************************************/
