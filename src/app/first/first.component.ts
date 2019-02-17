@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
-import { MatEventEmitterService } from 'projects/ngx-material-drawer/src/public_api';
+import { NgxMaterialDrawerEventEmitter } from 'projects/ngx-material-drawer/src/public_api';
 
 @Component({
   selector: 'app-first',
@@ -14,7 +14,7 @@ export class FirstComponent implements OnInit {
 
   @ViewChild(JsonEditorComponent) editor: JsonEditorComponent;
 
-  constructor(public matEventEmitterService: MatEventEmitterService) {
+  constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
     this.editorOptions = new JsonEditorOptions()
     this.editorOptions.modes = ['code', 'text', 'tree', 'view']; // set all allowed modes
     this.editorOptions.mode = 'code'; //set only one mode

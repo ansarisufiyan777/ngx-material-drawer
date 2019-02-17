@@ -4,7 +4,7 @@ import { Subject, ReplaySubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class MatEventEmitterService {
+export class NgxMaterialDrawerEventEmitter {
 
   public onMatDrawerInit = new Subject();
   public onMatDrawerAfterViewInit = new Subject();

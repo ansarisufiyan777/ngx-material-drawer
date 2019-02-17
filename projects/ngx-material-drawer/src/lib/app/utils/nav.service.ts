@@ -1,17 +1,17 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { MatEventEmitterService } from './mat-event-emitter.service';
+import { NgxMaterialDrawerEventEmitter } from './mat-event-emitter.service';
 @Injectable({
   providedIn: 'root'
 })
-export class NavService {
+export class NgxNavService {
   public appDrawer: any;
   public isMiniVarient: any;
   public isOpened: boolean;
   public currentUrl = new BehaviorSubject<string>(undefined);
   public isDrawerOpened = false;
   constructor(
-    public matEventEmitterService: MatEventEmitterService,
+    public matEventEmitterService: NgxMaterialDrawerEventEmitter,
   ) {
   }
   public closeNav() {

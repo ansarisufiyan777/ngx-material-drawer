@@ -8,7 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FirstComponent } from './first/first.component';
 import { NgJsonEditorModule } from 'ang-jsoneditor';
 import { MaterialModule } from './material.module';
-import { MaterialDrawerModule } from 'projects/ngx-material-drawer/src/public_api';
+import { NgxMaterialDrawerModule } from 'projects/ngx-material-drawer/src/public_api';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { MaterialDrawerModule } from 'projects/ngx-material-drawer/src/public_ap
     BrowserAnimationsModule,
     FlexLayoutModule,
     NgJsonEditorModule,
-    MaterialDrawerModule
+    NgxMaterialDrawerModule
   ],
   declarations: [
     AppComponent,

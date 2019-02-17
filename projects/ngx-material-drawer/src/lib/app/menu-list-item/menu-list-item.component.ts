@@ -1,8 +1,8 @@
 import { Component, HostBinding, Input, OnInit, ViewChild } from '@angular/core';
-import { NavService } from '../utils/nav.service';
+import { NgxNavService } from '../utils/nav.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { MatMenu } from '@angular/material';
-import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
+import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 
 @Component({
   selector: 'app-menu-list-item',
@@ -10,15 +10,15 @@ import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
   styleUrls: ['./menu-list-item.component.scss'],
   exportAs: 'menuInMenuListItemComponent'
 })
-export class MenuListItemComponent implements OnInit {
+export class NgxMenuListItemComponent implements OnInit {
   expanded: boolean;
   @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
   @ViewChild('childMenu') public childMenu;
   @Input() menus: any;
   @Input() depth: number;
   @Input() matMenu: MatMenu;
-  constructor(public navService: NavService,
-    public matEventEmitterService: MatEventEmitterService) {
+  constructor(public navService: NgxNavService,
+    public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
     if (this.depth === undefined) {
       this.depth = 0;
     }

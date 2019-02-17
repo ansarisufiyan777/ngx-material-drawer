@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NavService } from '../utils/nav.service';
-import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
+import { NgxNavService } from '../utils/nav.service';
+import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 
 
 @Component({
@@ -8,9 +8,9 @@ import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
   templateUrl: './top-nav.component.html',
   styleUrls: ['./top-nav.component.scss']
 })
-export class TopNavComponent implements OnInit {
+export class NgxTopNavComponent implements OnInit {
   @Input() config: any;
-  constructor(public matEventEmitterService: MatEventEmitterService,public navService:NavService) { }
+  constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter,public navService:NgxNavService) { }
   public isDrawerOpened;
   ngOnInit() {
   }

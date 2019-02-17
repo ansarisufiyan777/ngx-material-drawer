@@ -282,12 +282,6 @@ export class AppComponent implements OnInit {
 }
 ```
 
-## Thats it
-
-### Run 
-
-    ng serve --o
-
 
 # The MIT License
 Further resources on the  **MIT License**

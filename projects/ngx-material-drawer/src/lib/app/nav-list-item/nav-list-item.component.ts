@@ -1,7 +1,7 @@
 import { Component, HostBinding, Input, OnInit, AfterViewInit, Output, EventEmitter } from '@angular/core';
-import { NavService } from '../utils/nav.service';
+import { NgxNavService } from '../utils/nav.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
+import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 
 @Component({
   selector: 'app-nav-list-item',
@@ -17,14 +17,14 @@ import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
     ])
   ]
 })
-export class NavListItemComponent implements OnInit {
+export class NgxNavListItemComponent implements OnInit {
 
   expanded: boolean;
   @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
   @Input() item: any;
   @Input() depth: number;  
-  constructor(public navService: NavService,
-    public matEventEmitterService:MatEventEmitterService) {
+  constructor(public navService: NgxNavService,
+    public matEventEmitterService:NgxMaterialDrawerEventEmitter) {
     if (this.depth === undefined) {
       this.depth = 0;
     }
