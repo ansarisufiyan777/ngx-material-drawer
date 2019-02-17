@@ -31,6 +31,15 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
 
 # Preview
 
+![S4](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/WO-Nav.PNG)
+
+![S3](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/W-Nav.PNG)
+
+![S2](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/W-Menu.PNG)
+  
+![S1](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/MiniVariant-CLosed.PNG)
+
+
 ## [Demo](https://ansarisufiyan777.github.io/Angular-Material-Drawer/)
 
 ## Screen Shots
