@@ -1,0 +1,35 @@
+<span class="toolbar-spacer"></span>
+<mat-menu
+    #childMenu="matMenu"
+    [overlapTrigger]="false"
+>
+    <span *ngFor="let child of menus">
+        <!-- Handle branch node menu items -->
+        <span *ngIf="child.children && child.children.length > 0">
+            <button
+                [ngStyle]="child.style? child.style : ''"
+                mat-menu-item
+                color="primary"
+                [matMenuTriggerFor]="menu.childMenu"
+            >
+                <mat-icon>{{child.iconName}}</mat-icon>
+                <span>{{child.displayName}}</span>
+            </button>
+            <app-menu-list-item
+                #menu
+                [menus]="child.children"
+            ></app-menu-list-item>
+        </span>
+        <!-- Handle leaf node menu items -->
+        <span *ngIf="!child.children || child.children.length === 0">
+            <button
+                [ngStyle]="child.style? child.style : ''"
+                mat-menu-item
+                (click)="onItemSelected(child)"
+            >
+                <mat-icon>{{child.iconName}}</mat-icon>
+                <span>{{child.displayName}}</span>
+            </button>
+        </span>
+    </span>
+</mat-menu>

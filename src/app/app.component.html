@@ -1,0 +1,16 @@
+<ngx-material-drawer
+    (onMatDrawerInit) = "onMatDrawerInit($event)"
+    (onMatDrawerAfterViewInit) = "onMatDrawerAfterViewInit($event)"
+    (onNavStateChange) = "onNavStateChange($event)"
+    (onDataChange) = "onDataChange($event)"
+    (onSideNavOpen) = "onSideNavOpen($event)"
+    (onSideNavClosed) = "onSideNavClosed($event)"
+    (onMinVarientChange) = "onMinVarientChange($event)"
+    (onSideNavItemClick) = "onSideNavItemClick($event)"
+    (onSideNavItemExpanded) = "onSideNavItemExpanded($event)"
+    (onSideNavItemCollapsed) = "onSideNavItemCollapsed($event)"
+    (onMenuItemClick) = "onMenuItemClick($event)"
+    [data]= "jsonData"
+>
+    <app-first></app-first>
+</ngx-material-drawer>

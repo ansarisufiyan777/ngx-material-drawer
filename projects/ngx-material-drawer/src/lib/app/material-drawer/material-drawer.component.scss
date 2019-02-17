@@ -1,0 +1,56 @@
+@import '../scss/styles.scss';
+.mat-sidenav-container {
+    background-color: white !important;
+    height: 100vh;
+}
+
+.sidenav-toolbar {
+    height: 64px;
+    background-color: mat-color($app-primary);
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 600px) {
+        height: 56px;
+    }
+}
+
+.mat-nav-list {
+    padding-top: 0;
+}
+
+.fixed-topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100% !important;
+}
+
+.mat-drawer-container,
+.mat-drawer {
+    padding-top: 64px;
+    @media (max-width: 600px) {
+        padding-top: 56px;
+    }
+}
+
+.menu-list-item.mat-list-item {
+    .mat-list-item-content {
+        flex: 1 1 100%;
+    }
+}
+
+//Mini Variant
+
+.mini-drawer {
+    width: 60px;
+    transition: 300ms;
+    transform: translate3d(-100%,0,0);
+    /deep/ .mat-drawer-inner-container {
+        overflow: hidden;
+    }
+}
+
+.main-container-on-mini-variant {
+    width: calc(100% - 60px);
+}

@@ -1,0 +1,2583 @@
+[
+  {
+    "identifier": "pokemon",
+    "name": "Pokemon",
+    "publisher": "Asna Soft.",
+    "tray_image_file": "https://imgur.com/6qHmdjO.png",
+    "publisher_email": "sufiyan2you@gmail.com",
+    "publisher_website": "http://infiniteloops.info",
+    "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "stickers": [
+      {
+        "image_file": "https://imgur.com/b3QAsLp.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/REv7Gdx.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/bzfkaoX.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/9T9pzOu.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/FqlolgW.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/9LbmOgP.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/XurtUaS.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/JNC34Kt.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/IUM1MQb.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/eKYCLbR.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/PtXYZnX.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/FlKGOkI.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/YHAKK4K.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "friends",
+    "name": "Friends",
+    "publisher": "Asna Soft.",
+    "tray_image_file": "https://imgur.com/Llnehu8.png",
+    "publisher_email": "sufiyan2you@gmail.com",
+    "publisher_website": "http://infiniteloops.info",
+    "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "stickers": [
+      {
+        "image_file": "https://imgur.com/0MGPsOl.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/w5fJGd7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/70zQcO0.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/5fryhHQ.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/wmMnDWd.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/aR4wSvN.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/1SDPlxk.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/OGBGTRS.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/8BxVJ3v.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/nHAOgrp.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/wQZSQix.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/7e5jLff.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/1RcgZ8u.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/5Nl2NVy.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/AM9qWIa.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "avengers",
+    "name": "Avengers",
+    "publisher": "Asna Soft.",
+    "tray_image_file": "https://imgur.com/A1BjiIo.png",
+    "publisher_email": "sufiyan2you@gmail.com",
+    "publisher_website": "http://infiniteloops.info",
+    "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "stickers": [
+      {
+        "image_file": "https://imgur.com/yRukF46.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/x3JRFtc.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/76B3EJQ.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/7GZ5tnR.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/CgoS4c6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/9Q2Lfag.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/IcHZIGn.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/Ni9iYHu.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/OHqsxdr.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "minions",
+    "name": "Minions",
+    "publisher": "Asna Soft.",
+    "tray_image_file": "https://imgur.com/YMAtWo3.png",
+    "publisher_email": "sufiyan2you@gmail.com",
+    "publisher_website": "http://infiniteloops.info",
+    "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "stickers": [
+      {
+        "image_file": "https://imgur.com/TZeSSb3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/fgXXVkq.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/GouALby.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/aWHg9z6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/WDW6WSf.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/q22mYiO.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/iSwB3jR.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/UjFDvct.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/hrQzGcq.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/yGYw1Uw.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/bBhCq6v.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/xv3hOK2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/lVQrwDK.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Couple Story1548004422275",
+    "name": "Couple Story",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/uZU6cVk.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/15.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/192/16.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/23.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/26.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/28.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2d5/610/2d5610ba-4abb-3971-b990-1ab705d6f38d/30.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Tuziki1548004870306",
+    "name": "Tuziki",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/Jjcrtxe.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/15.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/192/16.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/23.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/26.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/1c1/e1a/1c1e1a70-c29a-34da-b9d2-a452f0d61ae2/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "got",
+    "name": "Game of Thrones",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/CRNtvAd.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/28.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/34.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/39.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://s.tcdn.co/2e3/0e0/2e30e07d-0b4d-3a93-87b3-b81fd42d41e1/35.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "superheros",
+    "name": "Super Heros",
+    "publisher": "Asna Soft.",
+    "tray_image_file": "https://imgur.com/cQiK3EU.png",
+    "publisher_email": "sufiyan2you@gmail.com",
+    "publisher_website": "http://infiniteloops.info",
+    "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "stickers": [
+      {
+        "image_file": "https://imgur.com/8Ki5aC3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/FHlvGNZ.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/4kiDz8j.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/w32Olgn.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/15SYqzf.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://imgur.com/MD7p4I1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Movie Meme",
+    "name": "Meme Pack - 1",
+    "publisher": "Asna Soft.",
+    "tray_image_file": "https://imgur.com/jEXSlEU.png",
+    "publisher_email": "sufiyan2you@gmail.com",
+    "publisher_website": "http://infiniteloops.info",
+    "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/34.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/16.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/23.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "https://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/94.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/28.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/29.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/30.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Homer Simpson1548002928488",
+    "name": "Homer Simpson",
+    "publisher": "Asna Soft.",
+    "tray_image_file": "https://imgur.com/CtsayMc.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/15.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/192/16.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/23.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/26.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/28.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/837/98f/83798fe7-d57e-300a-93fa-561e3027691e/29.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Love1548003267322",
+    "name": "Love",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/9AgqIk2.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/15.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/192/16.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/23.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/b3e/ce6/b3ece624-f4f0-3bec-8673-be0451d5f4dc/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Football Players1548005924315",
+    "name": "Football Players",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/f0tzkKV.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/15.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/192/16.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/23.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/26.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/28.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/29.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a3c/e80/a3ce8089-0e5c-3e0a-833f-1bea9e84000b/30.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Mr. Bean1548003663461",
+    "name": "Mr. Bean",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/fUZvMqw.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/15.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/192/16.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/387/79a/38779aa2-f514-380e-a6e6-f8c6ee379528/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Oh This Life1548003765082",
+    "name": "Oh This Life",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/g3EmdKi.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/23.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/28.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/29.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/30a/3af/30a3af87-f17f-3fb0-bbb2-b37aff29cbde/30.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Harry Potter1548004117033",
+    "name": "Harry Potter",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/PFweiFf.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/192/15.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/23.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/26.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/29.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/a90/399/a9039918-d481-320b-bbae-7b5cc05a520b/30.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "Sport Guy1548005149765",
+    "name": "Sport Guy",
+    "publisher": "Asna Soft.",
+    "isReward": false,
+    "tray_image_file": "https://imgur.com/sciFU2U.png",
+    "publisher_email": "contact@myproject.com",
+    "publisher_website": "https://myproject.com",
+    "privacy_policy_website": "https://myproject.com/legal",
+    "license_agreement_website": "https://myproject.com/license",
+    "stickers": [
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/1.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/2.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/3.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/4.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/5.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/6.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/7.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/8.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/9.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/10.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/11.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/12.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/13.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/14.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/15.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/192/16.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/17.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/18.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/19.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/20.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/21.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/22.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/24.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/25.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/26.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/27.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/28.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/29.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      },
+      {
+        "image_file": "http://s.tcdn.co/298/013/29801315-6d93-3cae-8c6f-b7b2e3c04931/30.png",
+        "emojis": [
+          "☕",
+          "🙂"
+        ]
+      }
+    ]
+  }
+]

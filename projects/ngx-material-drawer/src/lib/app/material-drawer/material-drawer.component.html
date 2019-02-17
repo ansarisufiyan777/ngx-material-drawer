@@ -1,0 +1,34 @@
+<app-top-nav
+    [config]="navData"
+    class="fixed-topnav"
+></app-top-nav>
+<!-- <app-top-nav [config]="navData?" class="fixed-topnav"></app-top-nav> -->
+<mat-sidenav-container
+    [hasBackdrop]="navData?.hasBackdrop"
+    autosize
+>
+    <mat-sidenav
+        [ngClass]="navData?.miniVarient && !navService?.isOpened? 'mini-drawer': ''"
+        [ngStyle]="navData?.navItems?.style? navData?.navItems.style : ''"
+        [position]="navData?.position"
+        #appDrawer
+        [mode]="navData?.mode"
+        [opened]="navData?.miniVarient ? 'open' : navData?.opened"
+    >
+        <mat-nav-list *ngIf="!navData?.miniVarient || navData?.miniVarient && navService?.isOpened">
+            <app-nav-list-item
+                *ngFor="let item of navData?.navItems?.data"
+                [item]="item"
+            ></app-nav-list-item>
+        </mat-nav-list>
+        <mat-nav-list *ngIf="navData?.miniVarient && !navService?.isOpened">
+            <app-nav-list-item-mini
+                *ngFor="let item of navData?.navItems?.data"
+                [item]="item"   
+            ></app-nav-list-item-mini>
+        </mat-nav-list>
+    </mat-sidenav>
+    <div [ngClass]="navData?.miniVarient ? 'main-container-on-mini-variant' :''">
+        <ng-content></ng-content>
+    </div>
+</mat-sidenav-container>
