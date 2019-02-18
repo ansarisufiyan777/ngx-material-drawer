@@ -27,11 +27,7 @@ export class NgxTopNavComponent implements OnInit {
   }
   onItemSelected(item: any) {
     if (!item.children || !item.children.length) {
-      
-      if (item.onClickClose) {
-        this.navService.closeNav();
-      }
-      this.matEventEmitterService.sideNavItemClick(item);
+      this.matEventEmitterService.menuItemClick(item);
     }
   }
 

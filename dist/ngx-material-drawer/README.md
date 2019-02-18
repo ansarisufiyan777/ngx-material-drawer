@@ -31,17 +31,33 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
 
 # Preview
 
+![S4](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/WO-Nav.PNG)
+
+![S3](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/W-Nav.PNG)
+
+![S2](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/W-Menu.PNG)
+  
+![S1](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/MiniVariant-CLosed.PNG)
+
+
 ## [Demo](https://ansarisufiyan777.github.io/Angular-Material-Drawer/)
 
 ## Screen Shots
 
 # Setup
+    
+    ng new SampleMaterialProject --style=scss
 
 ## 1. Provide the NPM dependency
 
     npm i ngx-material-drawer
 
-## 2. Create a *styles.scss* in *src/*
+## 2. Install Peer Dependencies
+
+    npm i -S @angular/animations @angular/flex-layout @angular/material @angular/cdk
+
+## 3. Create a *styles.scss* in *src/* (If not exist)
+
 **Place the below code inside styles.scss file**
 ### Code:
 ``` css
@@ -88,7 +104,7 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
     }
     @import  url( 'https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons');
 ```
-## 2. Add the below styles json snippet to *angular.json* file
+## 4. Add the below styles json snippet to *angular.json* file (If not exists)
 
 ### Code:
 
@@ -119,7 +135,7 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
 }
 ```
 
-## 3. Add the following code inside *app.modules.ts*
+## 5. Add the following code inside *app.modules.ts*
 ### code:
 
 ```javascript
@@ -144,7 +160,7 @@ export class AppModule { }
 
 ```
 
-## 4. Add below Code in the main app component html eg: *app.component.html*
+## 6. Add below Code in the main app component html eg: *app.component.html*
 ### code:
 ``` javascript
 <ngx-material-drawer
@@ -164,7 +180,7 @@ export class AppModule { }
     Hello
 </ngx-material-drawer>
 ```
-## 5. Provide an input JSON to the  *<ngx-material-drawer*
+## 7. Provide an input JSON to the  *<ngx-material-drawer*
 **Sample json [Link](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/src/drawer-config.json)**
 ### code:
 
@@ -174,7 +190,7 @@ import { Component, ViewChild, ElementRef, ViewEncapsulation, AfterViewInit, Inp
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
@@ -222,7 +238,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-## 6. Sample package.json
+## Sample package.json for reference
 
 ``` javascript
 {
@@ -253,7 +269,7 @@ export class AppComponent implements OnInit {
     "ang-jsoneditor": "^1.7.2",
     "core-js": "^2.5.4",
     "jsoneditor": "^5.28.2",
-    "ngx-material-drawer": "0.0.91",
+    "ngx-material-drawer": "2.0.12",
     "rxjs": "6.3.3",
     "terser": "^3.14.1",
     "zone.js": "~0.8.26"
@@ -281,6 +297,12 @@ export class AppComponent implements OnInit {
   }
 }
 ```
+
+## Thats it
+
+### Run 
+
+    ng serve --o
 
 
 # The MIT License

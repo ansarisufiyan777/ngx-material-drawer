@@ -13,101 +13,7 @@
         "route": "devfestfl",
         "style": {
           "background-color": "rgb(225, 0, 80)"
-        },
-        "children": [
-          {
-            "displayName": "Speakers",
-            "iconName": "group",
-            "route": "devfestfl/speakers",
-            "children": [
-              {
-                "displayName": "Michael Prentice",
-                "iconName": "person",
-                "route": "devfestfl/speakers/michael-prentice",
-                "children": [
-                  {
-                    "displayName": "Create Enterprise UIs",
-                    "iconName": "star_rate",
-                    "route": "devfestfl/speakers/michael-prentice/material-design",
-                    "style": {
-                      "background-color": "rgb(225, 0, 80)",
-                      "font-size": "20px",
-                      "font-weight": "bold"
-                    }
-                  }
-                ]
-              },
-              {
-                "displayName": "Stephen Fluin",
-                "iconName": "person",
-                "route": "devfestfl/speakers/stephen-fluin",
-                "children": [
-                  {
-                    "displayName": "What's up with the Web?",
-                    "iconName": "star_rate",
-                    "route": "devfestfl/speakers/stephen-fluin/what-up-web"
-                  }
-                ]
-              },
-              {
-                "displayName": "Mike Brocchi",
-                "iconName": "person",
-                "route": "devfestfl/speakers/mike-brocchi",
-                "children": [
-                  {
-                    "displayName": "My ally, the CLI",
-                    "iconName": "star_rate",
-                    "route": "devfestfl/speakers/mike-brocchi/my-ally-cli"
-                  },
-                  {
-                    "displayName": "Become an Angular Tailor",
-                    "iconName": "star_rate",
-                    "route": "devfestfl/speakers/mike-brocchi/become-angular-tailer"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "displayName": "Sessions",
-            "iconName": "speaker_notes",
-            "route": "devfestfl/sessions",
-            "children": [
-              {
-                "displayName": "Create Enterprise UIs",
-                "iconName": "star_rate",
-                "style": {
-                  "background-color": "rgb(225, 0, 80)",
-                  "font-size": "20px",
-                  "font-weight": "bold"
-                },
-                "route": "devfestfl/sessions/material-design",
-                "onClickClose": true
-              },
-              {
-                "displayName": "What's up with the Web?",
-                "iconName": "star_rate",
-                "disabled": true,
-                "route": "devfestfl/sessions/what-up-web"
-              },
-              {
-                "displayName": "My ally, the CLI",
-                "iconName": "star_rate",
-                "route": "devfestfl/sessions/my-ally-cli"
-              },
-              {
-                "displayName": "Become an Angular Tailor",
-                "iconName": "star_rate",
-                "route": "devfestfl/sessions/become-angular-tailer"
-              }
-            ]
-          },
-          {
-            "displayName": "Feedback",
-            "iconName": "feedback",
-            "route": "devfestfl/feedback"
-          }
-        ]
+        }
       },  {
         "displayName": "devfestfl",
         "iconName": "more_vert",
@@ -208,7 +114,7 @@
   "appName": "Material Drawer",
   "navItems": {
     "style": {
-      "background-color": "#c0c0c0"
+      "background-color": "rgb(248, 250, 251)"
     },
     "data":[
       {

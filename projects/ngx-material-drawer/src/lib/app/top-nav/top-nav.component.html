@@ -67,14 +67,26 @@
                 <!-- Leaf node buttons here -->
                 <span *ngIf="!item.children || item.children.length === 0">
                     <button
-                        [ngStyle]="item.style? item.style : ''"
-                        mat-button
-                        color="primary"
-                        (click)="onItemSelected(item)"
-                    >
-                        <mat-icon>{{item.iconName}}</mat-icon>
-                        <span>{{item.displayName}}</span>
-                    </button>
+                    *ngIf="item.displayName?.trim()"
+                    [ngStyle]="item?.style? item.style : ''"
+                    mat-button
+                    (click)="onItemSelected(item)"
+                    [disabled]="item.disabled"
+                >
+                    <mat-icon>{{item.iconName}}</mat-icon>
+                    <span>{{item.displayName}}</span>
+                </button>
+
+
+                <button
+                    *ngIf="!item?.displayName?.trim()"
+                    [ngStyle]="item?.style? item.style : ''"
+                    mat-icon-button
+                    (click)="onItemSelected(item)"
+                    [disabled]="item.disabled"
+                >
+                    <mat-icon>{{item.iconName}}</mat-icon>
+                </button>
                 </span>
             </span>
         </ng-container>

@@ -134,7 +134,7 @@
         }
       }
     },
-    "NgxMaterialDrawer": {
+    "ngx-material-drawer": {
       "root": "projects/ngx-material-drawer",
       "sourceRoot": "projects/ngx-material-drawer/src",
       "projectType": "library",
