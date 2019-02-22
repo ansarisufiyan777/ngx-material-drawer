@@ -180,7 +180,7 @@ export class AppModule { }
     Hello
 </ngx-material-drawer>
 ```
-## 7. Provide an input JSON to the  *<ngx-material-drawer*
+## 7. Provide an input JSON to the  *ngx-material-drawer*
 **Sample json [Link](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/src/drawer-config.json)**
 ### code:
 
