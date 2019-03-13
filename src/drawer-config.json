@@ -3,10 +3,11 @@
   "opened": false,
   "mode": "push",
   "toggleIcon": "menu",
-  "miniVarient":false,
+  "miniVarient": false,
+  "searchEnable": true,
   "toggleHtml": "",
-  "rightMenus":{
-    "data":[
+  "rightMenus": {
+    "data": [
       {
         "displayName": "",
         "iconName": "more_vert",
@@ -14,7 +15,8 @@
         "style": {
           "background-color": "rgb(225, 0, 80)"
         }
-      },  {
+      },
+      {
         "displayName": "devfestfl",
         "iconName": "more_vert",
         "route": "devfestfl",
@@ -110,13 +112,13 @@
       }
     ]
   },
-  "position":true,
+  "position": true,
   "appName": "Material Drawer",
   "navItems": {
     "style": {
       "background-color": "rgb(248, 250, 251)"
     },
-    "data":[
+    "data": [
       {
         "displayName": "DevFestFL",
         "iconName": "recent_actors",
@@ -125,7 +127,6 @@
           {
             "displayName": "Speakers",
             "iconName": "group",
-            
             "route": "devfestfl/speakers",
             "children": [
               {

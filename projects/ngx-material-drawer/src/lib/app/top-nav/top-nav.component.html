@@ -1,94 +1,120 @@
 <mat-toolbar
     color="primary"
-    class="mat-elevation-z1"
+    class="mat-elevation-z1 ngx-material-toolbar"
 >
-    <button
-        class="btn-toggle"
-        mat-icon-button
-        id="menu"
-        (click)="navService.toggleNav()"
-    >
-        <!-- <mat-icon>{{config?.toggleIcon ? config.toggleIcon : 'menu'}}</mat-icon> -->
-        <div
-            class="wrapper-menu"
-            [ngClass]="isDrawerOpened ? 'open' : 'close'"
+    <ng-container *ngIf="!showSeacrBar">
+
+        <!-- DrawerToggle menu -->
+        <button
+            class="btn-toggle"
+            mat-icon-button
+            id="menu"
+            (click)="navService.toggleNav()"
         >
-            <div class="line-menu half start"></div>
-            <div class="line-menu"></div>
-            <div class="line-menu half end"></div>
+            <!-- <mat-icon>{{config?.toggleIcon ? config.toggleIcon : 'menu'}}</mat-icon> -->
+            <div
+                class="wrapper-menu"
+                [ngClass]="isDrawerOpened ? 'open' : 'close'"
+            >
+                <div class="line-menu half start"></div>
+                <div class="line-menu"></div>
+                <div class="line-menu half end"></div>
+            </div>
+        </button>
+        <span>
+            {{config?.appName ? config.appName : 'Default name'}}
+        </span>
+        <!-- Right Menu -->
+        <span class="toolbar-spacer"></span>
+        <div
+            class="right-nav"
+            [ngStyle]="config?.rightMenus?.style? config?.rightMenus.style : ''"
+        >
+            <button
+                *ngIf="config?.searchEnable"
+                mat-button
+                mat-icon-button
+                (click)="toggleSearchBar()"
+            >
+                <mat-icon>search</mat-icon>
+            </button>
+            <ng-container *ngIf="config?.rightMenus?.data">
+                <span *ngFor="let item of config?.rightMenus?.data">
+                    <!-- Handle branch node buttons here -->
+                    <span *ngIf="item.children && item.children.length > 0">
+                        <button
+                            *ngIf="item.displayName?.trim()"
+                            [ngStyle]="item?.style? item.style : ''"
+                            mat-button
+                            [matMenuTriggerFor]="menu.childMenu"
+                            [disabled]="item.disabled"
+                        >
+                            <mat-icon>{{item.iconName}}</mat-icon>
+                            <span>{{item.displayName}}</span>
+                        </button>
+                        <button
+                            *ngIf="!item?.displayName?.trim()"
+                            [ngStyle]="item?.style? item.style : ''"
+                            mat-icon-button
+                            [matMenuTriggerFor]="menu.childMenu"
+                            [disabled]="item.disabled"
+                        >
+                            <mat-icon>{{item.iconName}}</mat-icon>
+                        </button>
+                        <app-menu-list-item
+                            #menu
+                            [menus]="item.children"
+                        ></app-menu-list-item>
+                    </span>
+                    <!-- Leaf node buttons here -->
+                    <span *ngIf="!item.children || item.children.length === 0">
+                        <button
+                            *ngIf="item.displayName?.trim()"
+                            [ngStyle]="item?.style? item.style : ''"
+                            mat-button
+                            (click)="onItemSelected(item)"
+                            [disabled]="item.disabled"
+                        >
+                            <mat-icon>{{item.iconName}}</mat-icon>
+                            <span>{{item.displayName}}</span>
+                        </button>
+                        <button
+                            *ngIf="!item?.displayName?.trim()"
+                            [ngStyle]="item?.style? item.style : ''"
+                            mat-icon-button
+                            (click)="onItemSelected(item)"
+                            [disabled]="item.disabled"
+                        >
+                            <mat-icon>{{item.iconName}}</mat-icon>
+                        </button>
+                    </span>
+                </span>
+            </ng-container>
+
+
         </div>
-    </button>
-    <span>
-        {{config?.appName ? config.appName : 'Default name'}}
-    </span>
-
-
-    <!-- Right Menu -->
-    <span class="toolbar-spacer"></span>
-    <div
-        class="right-nav"
-        [ngStyle]="config?.rightMenus?.style? config?.rightMenus.style : ''"
-    >
-        <ng-container *ngIf="config?.rightMenus?.data">
-            <span *ngFor="let item of config?.rightMenus?.data">
-                <!-- Handle branch node buttons here -->
-                <span *ngIf="item.children && item.children.length > 0">
-
-
-                    <button
-                        *ngIf="item.displayName?.trim()"
-                        [ngStyle]="item?.style? item.style : ''"
-                        mat-button
-                        [matMenuTriggerFor]="menu.childMenu"
-                        [disabled]="item.disabled"
-                    >
-                        <mat-icon>{{item.iconName}}</mat-icon>
-                        <span>{{item.displayName}}</span>
-                    </button>
-
-
-                    <button
-                        *ngIf="!item?.displayName?.trim()"
-                        [ngStyle]="item?.style? item.style : ''"
-                        mat-icon-button
-                        [matMenuTriggerFor]="menu.childMenu"
-                        [disabled]="item.disabled"
-                    >
-                        <mat-icon>{{item.iconName}}</mat-icon>
-                    </button>
-
-
-
-                    <app-menu-list-item
-                        #menu
-                        [menus]="item.children"
-                    ></app-menu-list-item>
-                </span>
-                <!-- Leaf node buttons here -->
-                <span *ngIf="!item.children || item.children.length === 0">
-                    <button
-                    *ngIf="item.displayName?.trim()"
-                    [ngStyle]="item?.style? item.style : ''"
-                    mat-button
-                    (click)="onItemSelected(item)"
-                    [disabled]="item.disabled"
-                >
-                    <mat-icon>{{item.iconName}}</mat-icon>
-                    <span>{{item.displayName}}</span>
-                </button>
-
-
-                <button
-                    *ngIf="!item?.displayName?.trim()"
-                    [ngStyle]="item?.style? item.style : ''"
-                    mat-icon-button
-                    (click)="onItemSelected(item)"
-                    [disabled]="item.disabled"
-                >
-                    <mat-icon>{{item.iconName}}</mat-icon>
-                </button>
-                </span>
-            </span>
-        </ng-container>
-    </div>
+    </ng-container>
+    <ng-container *ngIf="showSeacrBar">
+        <div class="searchBarMain">
+            <i
+                (click)="toggleSearchBar()"
+                class="material-icons searchBarSearchIcon"
+            >
+                arrow_back
+            </i>
+            <input
+                type="text"
+                name="header-search"
+                [(ngModel)]="searchValue"
+                class="searchBarInput"
+                placeholder="Search, discover, explore..."
+            >
+            <i
+                *ngIf="searchValue.length"
+                class="material-icons clearSearchBarField"
+            >
+                clear
+            </i>
+        </div>
+    </ng-container>
 </mat-toolbar>

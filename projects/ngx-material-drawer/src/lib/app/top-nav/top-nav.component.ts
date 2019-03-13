@@ -10,18 +10,20 @@ import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.servic
 })
 export class NgxTopNavComponent implements OnInit {
   @Input() config: any;
-  constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter,public navService:NgxNavService) { }
+  constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter, public navService: NgxNavService) { }
   public isDrawerOpened;
+  public showSeacrBar: boolean;
+  public searchValue: string = "hello";
   ngOnInit() {
   }
   ngAfterViewInit() {
-    this.matEventEmitterService.onNavStateChange.subscribe((flag:any) => {
+    this.matEventEmitterService.onNavStateChange.subscribe((flag: any) => {
       this.isDrawerOpened = flag.isOpened;
     })
-    this.matEventEmitterService.onSideNavClosed.subscribe((flag:any) => {
+    this.matEventEmitterService.onSideNavClosed.subscribe((flag: any) => {
       this.isDrawerOpened = flag.isOpened;
     })
-    this.matEventEmitterService.onSideNavClosed.subscribe((flag:any) => {
+    this.matEventEmitterService.onSideNavClosed.subscribe((flag: any) => {
       this.isDrawerOpened = flag.isOpened;
     })
   }
@@ -29,6 +31,10 @@ export class NgxTopNavComponent implements OnInit {
     if (!item.children || !item.children.length) {
       this.matEventEmitterService.menuItemClick(item);
     }
+  }
+
+  public toggleSearchBar(){
+    this.showSeacrBar = !this.showSeacrBar;
   }
 
 }

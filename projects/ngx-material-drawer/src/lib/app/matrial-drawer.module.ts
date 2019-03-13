@@ -10,6 +10,7 @@ import { NgxMenuListItemComponent } from './menu-list-item/menu-list-item.compon
 import { NgxMaterialDrawerComponent } from './material-drawer/material-drawer.component';
 import { NgxNavListItemMiniComponent } from './nav-list-item-mini/nav-list-item-mini.component';
 import { MaterialModule } from './material.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MaterialModule } from './material.module';
     CommonModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   declarations: [
     NgxNavListItemComponent,
