@@ -4,7 +4,16 @@
   "mode": "push",
   "toggleIcon": "menu",
   "miniVarient": false,
-  "searchEnable": true,
+  "search": {
+    "isEnable": true,
+    "placeHolder": "Searc, Discover, Explore...",
+    "style": {
+      
+    },
+    "searchIcon": "search",
+    "clearIcon": "clear",
+    "backIcon": "arrow_back"
+  },
   "toggleHtml": "",
   "rightMenus": {
     "data": [

@@ -4,6 +4,8 @@
 >
     <ng-container *ngIf="!showSeacrBar">
 
+
+
         <!-- DrawerToggle menu -->
         <button
             class="btn-toggle"
@@ -31,7 +33,7 @@
             [ngStyle]="config?.rightMenus?.style? config?.rightMenus.style : ''"
         >
             <button
-                *ngIf="config?.searchEnable"
+                *ngIf="config?.search?.isEnable"
                 mat-button
                 mat-icon-button
                 (click)="toggleSearchBar()"
@@ -92,28 +94,35 @@
             </ng-container>
 
 
+
+
         </div>
     </ng-container>
     <ng-container *ngIf="showSeacrBar">
-        <div class="searchBarMain">
+        <div
+            class="searchBarMain"
+            [ngStyle]="config?.search?.style ? config?.search?.style : ''"
+            [@enterAnimation]
+        >
             <i
                 (click)="toggleSearchBar()"
                 class="material-icons searchBarSearchIcon"
             >
-                arrow_back
+                {{config?.search?.backIcon ? config?.search?.backIcon : 'arrow_back'}}
             </i>
             <input
                 type="text"
                 name="header-search"
                 [(ngModel)]="searchValue"
                 class="searchBarInput"
-                placeholder="Search, discover, explore..."
+                [placeholder]="config?.search?.placeHolder ? config?.search?.placeHolder : 'Search, discover, explore...'"
             >
             <i
                 *ngIf="searchValue.length"
+                (click)="searchValue = ''"
                 class="material-icons clearSearchBarField"
             >
-                clear
+                {{config?.search?.clearIcon ? config?.search?.clearIcon : 'clear'}}
             </i>
         </div>
     </ng-container>
