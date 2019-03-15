@@ -24,6 +24,7 @@ export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
   @Output() public onSideNavItemExpanded: any = new EventEmitter();
   @Output() public onSideNavItemCollapsed: any = new EventEmitter();
   @Output() public onMenuItemClick: any = new EventEmitter();
+  @Output() public onSerachValueChange: any = new EventEmitter();
 
 
   //Material drawer version
@@ -81,6 +82,9 @@ export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
     })
     this.matEventEmitterService.onMenuItemClick.subscribe((event) => {
       this.onMenuItemClick.emit(event);
+    })
+    this.matEventEmitterService.onSearchValueChange.subscribe((event) => {
+      this.onSerachValueChange.emit(event);
     })
   }
 

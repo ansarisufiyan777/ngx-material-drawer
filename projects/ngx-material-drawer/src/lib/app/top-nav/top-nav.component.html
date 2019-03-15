@@ -2,7 +2,8 @@
     color="primary"
     class="mat-elevation-z1 ngx-material-toolbar"
 >
-    <ng-container *ngIf="!showSeacrBar">
+    <ng-container *ngIf="!isSearchActive">
+
 
 
 
@@ -96,9 +97,10 @@
 
 
 
+
         </div>
     </ng-container>
-    <ng-container *ngIf="showSeacrBar">
+    <ng-container *ngIf="isSearchActive">
         <div
             class="searchBarMain"
             [ngStyle]="config?.search?.style ? config?.search?.style : ''"
@@ -112,9 +114,13 @@
             </i>
             <input
                 type="text"
+                #ngxSearchBox
                 name="header-search"
                 [(ngModel)]="searchValue"
                 class="searchBarInput"
+                (input)="onSearchValueChange($event)"
+                (focus)="onSerachFocusIn($event)"
+                (focusout)="onSerachFocusOut($event)"
                 [placeholder]="config?.search?.placeHolder ? config?.search?.placeHolder : 'Search, discover, explore...'"
             >
             <i

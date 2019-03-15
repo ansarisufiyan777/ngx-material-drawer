@@ -7,12 +7,9 @@
   "search": {
     "isEnable": true,
     "placeHolder": "Searc, Discover, Explore...",
-    "style": {
-      
-    },
+    "style": {},
     "searchIcon": "search",
-    "clearIcon": "clear",
-    "backIcon": "arrow_back"
+    "clearIcon": "clear"
   },
   "toggleHtml": "",
   "rightMenus": {
