@@ -40,7 +40,7 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
 ![S1](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/MiniVariant-CLosed.PNG)
 
 
-## [Demo](https://ansarisufiyan777.github.io/Angular-Material-Drawer/)
+## [Demo](https://ansarisufiyan777.github.io/ngx-material-drawer/)
 
 ## Screen Shots
 
