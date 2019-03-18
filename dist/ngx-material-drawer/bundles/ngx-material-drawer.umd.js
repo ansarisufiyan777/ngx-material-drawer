@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('rxjs'), require('@angular/platform-browser'), require('@angular/platform-browser/animations'), require('@angular/common'), require('@angular/flex-layout'), require('@angular/animations'), require('@angular/core'), require('@angular/material')) :
-    typeof define === 'function' && define.amd ? define('ngx-material-drawer', ['exports', 'rxjs', '@angular/platform-browser', '@angular/platform-browser/animations', '@angular/common', '@angular/flex-layout', '@angular/animations', '@angular/core', '@angular/material'], factory) :
-    (factory((global['ngx-material-drawer'] = {}),global.rxjs,global.ng.platformBrowser,global.ng.platformBrowser.animations,global.ng.common,global.ng['flex-layout'],global.ng.animations,global.ng.core,global.ng.material));
-}(this, (function (exports,rxjs,platformBrowser,animations,common,flexLayout,animations$1,i0,material) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('rxjs'), require('@angular/platform-browser'), require('@angular/platform-browser/animations'), require('@angular/common'), require('@angular/flex-layout'), require('@angular/animations'), require('@angular/core'), require('@angular/material'), require('@angular/forms')) :
+    typeof define === 'function' && define.amd ? define('ngx-material-drawer', ['exports', 'rxjs', '@angular/platform-browser', '@angular/platform-browser/animations', '@angular/common', '@angular/flex-layout', '@angular/animations', '@angular/core', '@angular/material', '@angular/forms'], factory) :
+    (factory((global['ngx-material-drawer'] = {}),global.rxjs,global.ng.platformBrowser,global.ng.platformBrowser.animations,global.ng.common,global.ng['flex-layout'],global.ng.animations,global.ng.core,global.ng.material,global.ng.forms));
+}(this, (function (exports,rxjs,platformBrowser,animations,common,flexLayout,animations$1,i0,material,forms) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -23,6 +23,9 @@
             this.onMenuItemClick = new rxjs.Subject();
             this.onMenuItemExpanded = new rxjs.Subject();
             this.onMenuItemCollapsed = new rxjs.Subject();
+            this.onSearchValueChange = new rxjs.Subject();
+            this.onSerachFocusIn = new rxjs.Subject();
+            this.onSerachFocusOut = new rxjs.Subject();
         }
         /**
          * Material drawer Main component life cycle
@@ -74,6 +77,57 @@
          */
             function (event) {
                 this.onNavStateChange.next(event);
+            };
+        /**
+         * On Search value change
+         * @param searchObject containing value and input search object
+         */
+        /**
+         * On Search value change
+         * @param {?} searchObject containing value and input search object
+         * @return {?}
+         */
+        NgxMaterialDrawerEventEmitter.prototype.searchValueChange = /**
+         * On Search value change
+         * @param {?} searchObject containing value and input search object
+         * @return {?}
+         */
+            function (searchObject) {
+                this.onSearchValueChange.next(searchObject);
+            };
+        /**
+         * On Search focusin
+         * @param searchObject containing value and input search object
+         */
+        /**
+         * On Search focusin
+         * @param {?} searchObject containing value and input search object
+         * @return {?}
+         */
+        NgxMaterialDrawerEventEmitter.prototype.serachFocusIn = /**
+         * On Search focusin
+         * @param {?} searchObject containing value and input search object
+         * @return {?}
+         */
+            function (searchObject) {
+                this.onSerachFocusIn.next(searchObject);
+            };
+        /**
+         * On Search focusout
+         * @param searchObject containing value and input search object
+         */
+        /**
+         * On Search focusout
+         * @param {?} searchObject containing value and input search object
+         * @return {?}
+         */
+        NgxMaterialDrawerEventEmitter.prototype.serachFocusOut = /**
+         * On Search focusout
+         * @param {?} searchObject containing value and input search object
+         * @return {?}
+         */
+            function (searchObject) {
+                this.onSerachFocusOut.next(searchObject);
             };
         /**
          * on data chamge
@@ -359,6 +413,7 @@
             this.onSideNavItemExpanded = new i0.EventEmitter();
             this.onSideNavItemCollapsed = new i0.EventEmitter();
             this.onMenuItemClick = new i0.EventEmitter();
+            this.onSerachValueChange = new i0.EventEmitter();
             //Material drawer version
             this.version = material.VERSION;
             this.subscribeToEventEmitter();
@@ -468,6 +523,12 @@
                  */function (event) {
                     _this.onMenuItemClick.emit(event);
                 }));
+                this.matEventEmitterService.onSearchValueChange.subscribe(( /**
+                 * @param {?} event
+                 * @return {?}
+                 */function (event) {
+                    _this.onSerachValueChange.emit(event);
+                }));
             };
         NgxMaterialDrawerComponent.decorators = [
             { type: i0.Component, args: [{
@@ -496,7 +557,8 @@
             onSideNavItemClick: [{ type: i0.Output }],
             onSideNavItemExpanded: [{ type: i0.Output }],
             onSideNavItemCollapsed: [{ type: i0.Output }],
-            onMenuItemClick: [{ type: i0.Output }]
+            onMenuItemClick: [{ type: i0.Output }],
+            onSerachValueChange: [{ type: i0.Output }]
         };
         return NgxMaterialDrawerComponent;
     }());
@@ -596,6 +658,7 @@
         function NgxTopNavComponent(matEventEmitterService, navService) {
             this.matEventEmitterService = matEventEmitterService;
             this.navService = navService;
+            this.searchValue = "hello";
         }
         /**
          * @return {?}
@@ -645,11 +708,80 @@
                     this.matEventEmitterService.menuItemClick(item);
                 }
             };
+        /**
+         * @return {?}
+         */
+        NgxTopNavComponent.prototype.toggleSearchBar = /**
+         * @return {?}
+         */
+            function () {
+                this.isSearchActive = !this.isSearchActive;
+            };
+        /**
+         * @param {?} event
+         * @return {?}
+         */
+        NgxTopNavComponent.prototype.onSearchValueChange = /**
+         * @param {?} event
+         * @return {?}
+         */
+            function (event) {
+                /** @type {?} */
+                var searchObject = {
+                    value: this.searchValue,
+                    inputRef: this.ngxSearchBox
+                };
+                this.matEventEmitterService.searchValueChange(searchObject);
+            };
+        /**
+         * @param {?} event
+         * @return {?}
+         */
+        NgxTopNavComponent.prototype.onSerachFocusIn = /**
+         * @param {?} event
+         * @return {?}
+         */
+            function (event) {
+                /** @type {?} */
+                var searchObject = {
+                    value: this.searchValue,
+                    inputRef: this.ngxSearchBox
+                };
+                this.matEventEmitterService.serachFocusIn(searchObject);
+            };
+        /**
+         * @param {?} event
+         * @return {?}
+         */
+        NgxTopNavComponent.prototype.onSerachFocusOut = /**
+         * @param {?} event
+         * @return {?}
+         */
+            function (event) {
+                /** @type {?} */
+                var searchObject = {
+                    value: this.searchValue,
+                    inputRef: this.ngxSearchBox
+                };
+                this.matEventEmitterService.serachFocusOut(searchObject);
+            };
         NgxTopNavComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'app-top-nav',
-                        template: "<mat-toolbar\r\n    color=\"primary\"\r\n    class=\"mat-elevation-z1\"\r\n>\r\n    <button\r\n        class=\"btn-toggle\"\r\n        mat-icon-button\r\n        id=\"menu\"\r\n        (click)=\"navService.toggleNav()\"\r\n    >\r\n        <!-- <mat-icon>{{config?.toggleIcon ? config.toggleIcon : 'menu'}}</mat-icon> -->\r\n        <div\r\n            class=\"wrapper-menu\"\r\n            [ngClass]=\"isDrawerOpened ? 'open' : 'close'\"\r\n        >\r\n            <div class=\"line-menu half start\"></div>\r\n            <div class=\"line-menu\"></div>\r\n            <div class=\"line-menu half end\"></div>\r\n        </div>\r\n    </button>\r\n    <span>\r\n        {{config?.appName ? config.appName : 'Default name'}}\r\n    </span>\r\n\r\n\r\n    <!-- Right Menu -->\r\n    <span class=\"toolbar-spacer\"></span>\r\n    <div\r\n        class=\"right-nav\"\r\n        [ngStyle]=\"config?.rightMenus?.style? config?.rightMenus.style : ''\"\r\n    >\r\n        <ng-container *ngIf=\"config?.rightMenus?.data\">\r\n            <span *ngFor=\"let item of config?.rightMenus?.data\">\r\n                <!-- Handle branch node buttons here -->\r\n                <span *ngIf=\"item.children && item.children.length > 0\">\r\n\r\n\r\n                    <button\r\n                        *ngIf=\"item.displayName?.trim()\"\r\n                        [ngStyle]=\"item?.style? item.style : ''\"\r\n                        mat-button\r\n                        [matMenuTriggerFor]=\"menu.childMenu\"\r\n                        [disabled]=\"item.disabled\"\r\n                    >\r\n                        <mat-icon>{{item.iconName}}</mat-icon>\r\n                        <span>{{item.displayName}}</span>\r\n                    </button>\r\n\r\n\r\n                    <button\r\n                        *ngIf=\"!item?.displayName?.trim()\"\r\n                        [ngStyle]=\"item?.style? item.style : ''\"\r\n                        mat-icon-button\r\n                        [matMenuTriggerFor]=\"menu.childMenu\"\r\n                        [disabled]=\"item.disabled\"\r\n                    >\r\n                        <mat-icon>{{item.iconName}}</mat-icon>\r\n                    </button>\r\n\r\n\r\n\r\n                    <app-menu-list-item\r\n                        #menu\r\n                        [menus]=\"item.children\"\r\n                    ></app-menu-list-item>\r\n                </span>\r\n                <!-- Leaf node buttons here -->\r\n                <span *ngIf=\"!item.children || item.children.length === 0\">\r\n                    <button\r\n                    *ngIf=\"item.displayName?.trim()\"\r\n                    [ngStyle]=\"item?.style? item.style : ''\"\r\n                    mat-button\r\n                    (click)=\"onItemSelected(item)\"\r\n                    [disabled]=\"item.disabled\"\r\n                >\r\n                    <mat-icon>{{item.iconName}}</mat-icon>\r\n                    <span>{{item.displayName}}</span>\r\n                </button>\r\n\r\n\r\n                <button\r\n                    *ngIf=\"!item?.displayName?.trim()\"\r\n                    [ngStyle]=\"item?.style? item.style : ''\"\r\n                    mat-icon-button\r\n                    (click)=\"onItemSelected(item)\"\r\n                    [disabled]=\"item.disabled\"\r\n                >\r\n                    <mat-icon>{{item.iconName}}</mat-icon>\r\n                </button>\r\n                </span>\r\n            </span>\r\n        </ng-container>\r\n    </div>\r\n</mat-toolbar>\r\n",
-                        styles: [".wrapper-menu{width:40px;height:25px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;transition:transform 330ms ease-out;transition:transform 330ms ease-out,-webkit-transform 330ms ease-out}.wrapper-menu.open{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.line-menu{background-color:#fff;border-radius:5px;width:100%;height:4px}.line-menu.half{width:50%}.line-menu.start{transition:transform 330ms cubic-bezier(.54,-.81,.57,.57);transition:transform 330ms cubic-bezier(.54,-.81,.57,.57),-webkit-transform 330ms cubic-bezier(.54,-.81,.57,.57);-webkit-transform-origin:right;transform-origin:right}.open .line-menu.start{-webkit-transform:rotate(-90deg) translateX(3px);transform:rotate(-90deg) translateX(3px)}.line-menu.end{align-self:flex-end;transition:transform 330ms cubic-bezier(.54,-.81,.57,.57);transition:transform 330ms cubic-bezier(.54,-.81,.57,.57),-webkit-transform 330ms cubic-bezier(.54,-.81,.57,.57);-webkit-transform-origin:left;transform-origin:left}.open .line-menu.end{-webkit-transform:rotate(-90deg) translateX(-3px);transform:rotate(-90deg) translateX(-3px)}.btn-toggle{margin-right:5px}.toolbar-spacer{flex:1 1 auto}.right-nav{display:flex}"]
+                        template: "<mat-toolbar\r\n    color=\"primary\"\r\n    class=\"mat-elevation-z1 ngx-material-toolbar\"\r\n>\r\n    <ng-container *ngIf=\"!isSearchActive\">\r\n\r\n\r\n\r\n\r\n        <!-- DrawerToggle menu -->\r\n        <button\r\n            class=\"btn-toggle\"\r\n            mat-icon-button\r\n            id=\"menu\"\r\n            (click)=\"navService.toggleNav()\"\r\n        >\r\n            <!-- <mat-icon>{{config?.toggleIcon ? config.toggleIcon : 'menu'}}</mat-icon> -->\r\n            <div\r\n                class=\"wrapper-menu\"\r\n                [ngClass]=\"isDrawerOpened ? 'open' : 'close'\"\r\n            >\r\n                <div class=\"line-menu half start\"></div>\r\n                <div class=\"line-menu\"></div>\r\n                <div class=\"line-menu half end\"></div>\r\n            </div>\r\n        </button>\r\n        <span>\r\n            {{config?.appName ? config.appName : 'Default name'}}\r\n        </span>\r\n        <!-- Right Menu -->\r\n        <span class=\"toolbar-spacer\"></span>\r\n        <div\r\n            class=\"right-nav\"\r\n            [ngStyle]=\"config?.rightMenus?.style? config?.rightMenus.style : ''\"\r\n        >\r\n            <button\r\n                *ngIf=\"config?.search?.isEnable\"\r\n                mat-button\r\n                mat-icon-button\r\n                (click)=\"toggleSearchBar()\"\r\n            >\r\n                <mat-icon>search</mat-icon>\r\n            </button>\r\n            <ng-container *ngIf=\"config?.rightMenus?.data\">\r\n                <span *ngFor=\"let item of config?.rightMenus?.data\">\r\n                    <!-- Handle branch node buttons here -->\r\n                    <span *ngIf=\"item.children && item.children.length > 0\">\r\n                        <button\r\n                            *ngIf=\"item.displayName?.trim()\"\r\n                            [ngStyle]=\"item?.style? item.style : ''\"\r\n                            mat-button\r\n                            [matMenuTriggerFor]=\"menu.childMenu\"\r\n                            [disabled]=\"item.disabled\"\r\n                        >\r\n                            <mat-icon>{{item.iconName}}</mat-icon>\r\n                            <span>{{item.displayName}}</span>\r\n                        </button>\r\n                        <button\r\n                            *ngIf=\"!item?.displayName?.trim()\"\r\n                            [ngStyle]=\"item?.style? item.style : ''\"\r\n                            mat-icon-button\r\n                            [matMenuTriggerFor]=\"menu.childMenu\"\r\n                            [disabled]=\"item.disabled\"\r\n                        >\r\n                            <mat-icon>{{item.iconName}}</mat-icon>\r\n                        </button>\r\n                        <app-menu-list-item\r\n                            #menu\r\n                            [menus]=\"item.children\"\r\n                        ></app-menu-list-item>\r\n                    </span>\r\n                    <!-- Leaf node buttons here -->\r\n                    <span *ngIf=\"!item.children || item.children.length === 0\">\r\n                        <button\r\n                            *ngIf=\"item.displayName?.trim()\"\r\n                            [ngStyle]=\"item?.style? item.style : ''\"\r\n                            mat-button\r\n                            (click)=\"onItemSelected(item)\"\r\n                            [disabled]=\"item.disabled\"\r\n                        >\r\n                            <mat-icon>{{item.iconName}}</mat-icon>\r\n                            <span>{{item.displayName}}</span>\r\n                        </button>\r\n                        <button\r\n                            *ngIf=\"!item?.displayName?.trim()\"\r\n                            [ngStyle]=\"item?.style? item.style : ''\"\r\n                            mat-icon-button\r\n                            (click)=\"onItemSelected(item)\"\r\n                            [disabled]=\"item.disabled\"\r\n                        >\r\n                            <mat-icon>{{item.iconName}}</mat-icon>\r\n                        </button>\r\n                    </span>\r\n                </span>\r\n            </ng-container>\r\n\r\n\r\n\r\n\r\n\r\n        </div>\r\n    </ng-container>\r\n    <ng-container *ngIf=\"isSearchActive\">\r\n        <div\r\n            class=\"searchBarMain\"\r\n            [ngStyle]=\"config?.search?.style ? config?.search?.style : ''\"\r\n            [@enterAnimation]\r\n        >\r\n            <i\r\n                (click)=\"toggleSearchBar()\"\r\n                class=\"material-icons searchBarSearchIcon\"\r\n            >\r\n                {{config?.search?.backIcon ? config?.search?.backIcon : 'arrow_back'}}\r\n            </i>\r\n            <input\r\n                type=\"text\"\r\n                #ngxSearchBox\r\n                name=\"header-search\"\r\n                [(ngModel)]=\"searchValue\"\r\n                class=\"searchBarInput\"\r\n                (input)=\"onSearchValueChange($event)\"\r\n                (focus)=\"onSerachFocusIn($event)\"\r\n                (focusout)=\"onSerachFocusOut($event)\"\r\n                [placeholder]=\"config?.search?.placeHolder ? config?.search?.placeHolder : 'Search, discover, explore...'\"\r\n            >\r\n            <i\r\n                *ngIf=\"searchValue.length\"\r\n                (click)=\"searchValue = ''\"\r\n                class=\"material-icons clearSearchBarField\"\r\n            >\r\n                {{config?.search?.clearIcon ? config?.search?.clearIcon : 'clear'}}\r\n            </i>\r\n        </div>\r\n    </ng-container>\r\n</mat-toolbar>\r\n",
+                        animations: [
+                            animations$1.trigger('enterAnimation', [
+                                animations$1.transition(':enter', [
+                                    animations$1.style({ transform: 'translateX(100%)', opacity: 0 }),
+                                    animations$1.animate('500ms', animations$1.style({ transform: 'translateX(0)', opacity: 1 }))
+                                ]),
+                                animations$1.transition(':leave', [
+                                    animations$1.style({ transform: 'translateX(0)', opacity: 1 }),
+                                    animations$1.animate('500ms', animations$1.style({ transform: 'translateX(100%)', opacity: 0 }))
+                                ])
+                            ])
+                        ],
+                        styles: [".ngx-material-toolbar .wrapper-menu{width:40px;height:25px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;transition:transform 330ms ease-out;transition:transform 330ms ease-out,-webkit-transform 330ms ease-out}.ngx-material-toolbar .wrapper-menu.open{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.ngx-material-toolbar .line-menu{background-color:#fff;border-radius:5px;width:100%;height:4px}.ngx-material-toolbar .line-menu.half{width:50%}.ngx-material-toolbar .line-menu.start{transition:transform 330ms cubic-bezier(.54,-.81,.57,.57);transition:transform 330ms cubic-bezier(.54,-.81,.57,.57),-webkit-transform 330ms cubic-bezier(.54,-.81,.57,.57);-webkit-transform-origin:right;transform-origin:right}.ngx-material-toolbar .open .line-menu.start{-webkit-transform:rotate(-90deg) translateX(3px);transform:rotate(-90deg) translateX(3px)}.ngx-material-toolbar .line-menu.end{align-self:flex-end;transition:transform 330ms cubic-bezier(.54,-.81,.57,.57);transition:transform 330ms cubic-bezier(.54,-.81,.57,.57),-webkit-transform 330ms cubic-bezier(.54,-.81,.57,.57);-webkit-transform-origin:left;transform-origin:left}.ngx-material-toolbar .open .line-menu.end{-webkit-transform:rotate(-90deg) translateX(-3px);transform:rotate(-90deg) translateX(-3px)}.ngx-material-toolbar .btn-toggle{margin-right:5px}.ngx-material-toolbar .toolbar-spacer{flex:1 1 auto}.ngx-material-toolbar .right-nav{display:flex}.ngx-material-toolbar .searchBarMain{background:#fff;width:90%;margin:11px auto 0;height:42px;border-radius:2px;box-shadow:0 1px 8px 0 rgba(0,0,0,.14);position:fixed;left:0;right:0;top:0}.ngx-material-toolbar .searchBarMain i.searchBarSearchIcon{height:100%;line-height:42px;float:left;width:52px;cursor:pointer;text-align:center;color:rgba(68,68,68,.5)}.ngx-material-toolbar .searchBarMain input.searchBarInput{height:42px;padding:0 32px 0 0;margin:0;border:0;box-sizing:border-box;background:0 0;width:calc(100% - 52px);outline:0;font-size:16px;color:rgba(0,0,0,.76);font-weight:400;font-family:Roboto,sans-serif}.ngx-material-toolbar .searchBarMain i.clearSearchBarField{position:absolute;right:12px;top:11px;color:rgba(0,0,0,.84);font-size:20px;cursor:pointer}"]
                     }] }
         ];
         /** @nocollapse */
@@ -660,6 +792,7 @@
             ];
         };
         NgxTopNavComponent.propDecorators = {
+            ngxSearchBox: [{ type: i0.ViewChild, args: ["ngxSearchBox",] }],
             config: [{ type: i0.Input }]
         };
         return NgxTopNavComponent;
@@ -873,7 +1006,8 @@
                             common.CommonModule,
                             MaterialModule,
                             animations.BrowserAnimationsModule,
-                            flexLayout.FlexLayoutModule
+                            flexLayout.FlexLayoutModule,
+                            forms.FormsModule
                         ],
                         declarations: [
                             NgxNavListItemComponent,

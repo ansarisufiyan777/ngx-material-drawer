@@ -17,6 +17,7 @@ export declare class NgxMaterialDrawerComponent implements AfterViewInit, OnInit
     onSideNavItemExpanded: any;
     onSideNavItemCollapsed: any;
     onMenuItemClick: any;
+    onSerachValueChange: any;
     version: import("@angular/core/src/version").Version;
     constructor(navService: NgxNavService, matEventEmitterService: NgxMaterialDrawerEventEmitter);
     ngOnInit(): void;

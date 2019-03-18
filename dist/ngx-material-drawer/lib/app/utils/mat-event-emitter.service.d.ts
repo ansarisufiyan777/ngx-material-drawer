@@ -1,3 +1,4 @@
+import { ElementRef } from '@angular/core';
 import { Subject, ReplaySubject } from 'rxjs';
 export declare class NgxMaterialDrawerEventEmitter {
     onMatDrawerInit: Subject<{}>;
@@ -13,6 +14,9 @@ export declare class NgxMaterialDrawerEventEmitter {
     onMenuItemClick: Subject<{}>;
     onMenuItemExpanded: Subject<{}>;
     onMenuItemCollapsed: Subject<{}>;
+    onSearchValueChange: Subject<{}>;
+    onSerachFocusIn: Subject<{}>;
+    onSerachFocusOut: Subject<{}>;
     constructor();
     /**
      * Material drawer Main component life cycle
@@ -29,6 +33,30 @@ export declare class NgxMaterialDrawerEventEmitter {
      * @param event json
      */
     navStateChange(event: any): void;
+    /**
+     * On Search value change
+     * @param searchObject containing value and input search object
+     */
+    searchValueChange(searchObject: {
+        value: string;
+        inputRef: ElementRef<any>;
+    }): any;
+    /**
+     * On Search focusin
+     * @param searchObject containing value and input search object
+     */
+    serachFocusIn(searchObject: {
+        value: string;
+        inputRef: ElementRef<any>;
+    }): any;
+    /**
+     * On Search focusout
+     * @param searchObject containing value and input search object
+     */
+    serachFocusOut(searchObject: {
+        value: string;
+        inputRef: ElementRef<any>;
+    }): any;
     /**
      * on data chamge
      * @param event new json

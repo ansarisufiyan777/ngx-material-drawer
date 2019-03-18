@@ -175,6 +175,9 @@ export class AppModule { }
     (onSideNavItemExpanded) = "onSideNavItemExpanded($event)"
     (onSideNavItemCollapsed) = "onSideNavItemCollapsed($event)"
     (onMenuItemClick) = "onMenuItemClick($event)"
+    (onSerachValueChange) ="onSerachValueChange($event)"
+    (onSerachFocusIn) ="onSerachFocusIn($event)"
+    (onSerachFocusOut) ="onSerachFocusOut($event)"
     [data]= "jsonData"
 >
     Hello
@@ -233,6 +236,16 @@ export class AppComponent implements OnInit {
   }
   public onMenuItemClick(event) {
     console.log("onMenuItemClick", event);
+  }
+  public onSerachValueChange(event) {
+    console.log("onSerachValueChange", event);
+  }
+
+  public onSerachFocusIn(event) {
+    console.log("onSerachFocusin", event);
+  }
+  public onSerachFocusOut(event) {
+    console.log("onSerachFocusOut", event);
   }
 }
 
