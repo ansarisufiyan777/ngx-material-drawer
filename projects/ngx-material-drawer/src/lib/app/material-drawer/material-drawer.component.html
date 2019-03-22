@@ -24,7 +24,7 @@
         <mat-nav-list *ngIf="navData?.miniVarient && !navService?.isOpened">
             <app-nav-list-item-mini
                 *ngFor="let item of navData?.navItems?.data"
-                [item]="item"   
+                [item]="item"
             ></app-nav-list-item-mini>
         </mat-nav-list>
     </mat-sidenav>
@@ -32,3 +32,29 @@
         <ng-content></ng-content>
     </div>
 </mat-sidenav-container>
+
+
+<div class="ngx-material-fab">
+
+
+    <div class="ngx-material-mini-fab">
+        <button mat-mini-fab class="mini-fab">
+            <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+        <button mat-mini-fab class="mini-fab">
+            <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+        <button mat-mini-fab class="mini-fab">
+            <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+        <button mat-mini-fab class="mini-fab">
+            <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+        <button mat-mini-fab class="mini-fab">
+            <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+    </div>
+    <button mat-fab>
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+</div>
