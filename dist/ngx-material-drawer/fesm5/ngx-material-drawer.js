@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Injectable, NgModule, Component, HostBinding, Input, ViewChild, EventEmitter, Output, defineInjectable, inject } from '@angular/core';
+import { Injectable, NgModule, Component, Input, ViewChild, HostBinding, EventEmitter, Output, defineInjectable, inject } from '@angular/core';
 import { VERSION, MatButtonModule, MatIconModule, MatListModule, MatMenuModule, MatRippleModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
@@ -670,7 +670,7 @@ var NgxTopNavComponent = /** @class */ (function () {
     function NgxTopNavComponent(matEventEmitterService, navService) {
         this.matEventEmitterService = matEventEmitterService;
         this.navService = navService;
-        this.searchValue = "hello";
+        this.searchValue = "";
     }
     /**
      * @return {?}

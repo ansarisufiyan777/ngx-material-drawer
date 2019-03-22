@@ -658,7 +658,7 @@
         function NgxTopNavComponent(matEventEmitterService, navService) {
             this.matEventEmitterService = matEventEmitterService;
             this.navService = navService;
-            this.searchValue = "hello";
+            this.searchValue = "";
         }
         /**
          * @return {?}

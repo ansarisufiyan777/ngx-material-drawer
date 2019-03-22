@@ -29,7 +29,7 @@ export class NgxTopNavComponent implements OnInit {
   constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter, public navService: NgxNavService) { }
   public isDrawerOpened;
   public isSearchActive: boolean;
-  public searchValue: string = "hello";
+  public searchValue: string = "";
 
   ngOnInit() {
   }
