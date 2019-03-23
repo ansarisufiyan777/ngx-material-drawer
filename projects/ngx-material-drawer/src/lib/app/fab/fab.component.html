@@ -1,0 +1,29 @@
+<div class="ngx-material-fab">
+    <div
+        class="ngx-material-mini-fab"
+        *ngIf="expanded"
+        [@slideInOut]
+    >
+        <ng-container *ngFor="let item of fabData?.children">
+            <button
+                *ngIf="item?.isEnable"
+                [ngStyle]="item?.style? item?.style : ''"
+                mat-mini-fab
+                [matTooltip]="item?.tooltip"
+                class="mini-fab"
+                (click)="onFabClick(item)"
+            >
+                <mat-icon>{{item?.icon}}</mat-icon>
+            </button>
+        </ng-container>
+    </div>
+    <button
+        mat-fab
+        [matTooltip]="item?.tooltip"
+        *ngIf="fabData?.isEnable"
+        [ngStyle]="fabData?.style? fabData?.style : ''"
+        (click)="onMainFabClick(fabData)"
+    >
+        <mat-icon>{{fabData?.icon}}</mat-icon>
+    </button>
+</div>

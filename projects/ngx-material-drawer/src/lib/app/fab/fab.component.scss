@@ -1,0 +1,16 @@
+
+.ngx-material-fab{
+    position: fixed;
+    z-index: 5;
+    right: 25px;
+    bottom: 25px;
+    .ngx-material-mini-fab{
+        position: absolute;
+        left: 0px;
+        bottom: 55px;
+        padding: 10px;
+        .mini-fab{
+            margin-top: 5px;
+        }
+    }
+}

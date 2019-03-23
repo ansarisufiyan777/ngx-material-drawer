@@ -7,6 +7,7 @@ import {
   MatRippleModule,
   MatSidenavModule,
   MatToolbarModule,
+  MatTooltipModule,
 } from '@angular/material';
 
 /**
@@ -21,6 +22,7 @@ import {
       MatRippleModule,
       MatSidenavModule,
       MatToolbarModule,
+      MatTooltipModule
     ],
     declarations: []
   })

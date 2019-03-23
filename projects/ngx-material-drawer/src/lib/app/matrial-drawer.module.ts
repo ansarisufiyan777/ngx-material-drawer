@@ -11,6 +11,7 @@ import { NgxMaterialDrawerComponent } from './material-drawer/material-drawer.co
 import { NgxNavListItemMiniComponent } from './nav-list-item-mini/nav-list-item-mini.component';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
+import { NgxFabComponent } from './fab/fab.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     NgxMenuListItemComponent,
     NgxMaterialDrawerComponent,
     NgxTopNavComponent,
-    NgxNavListItemMiniComponent
+    NgxNavListItemMiniComponent,
+    NgxFabComponent
   ],
   bootstrap: [NgxMaterialDrawerComponent],
   providers: [NgxNavService],
