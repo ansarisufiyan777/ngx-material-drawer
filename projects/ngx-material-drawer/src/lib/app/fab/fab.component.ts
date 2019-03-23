@@ -33,10 +33,22 @@ export class NgxFabComponent implements OnInit {
     }
 
     onFabClick(item: any) {
-
+        this.matEventEmitterService.fabButtonClick(item);
     }
 
     onMainFabClick(item: any) {
         this.expanded = !this.expanded;
+        if (this.fabData &&
+            this.fabData.children &&
+            this.fabData.children.length &&
+            this.fabData.children.filter(f => f.isEnable).length) {
+            if (this.expanded) {
+                this.matEventEmitterService.fabExpanded(item);
+            } else {
+                this.matEventEmitterService.fabCollapsed(item);
+            }
+        } else {
+            this.matEventEmitterService.mainFabButtonClick(item);
+        }
     }
 }

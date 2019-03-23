@@ -1,6 +1,6 @@
 ## AngularMaterialDrawer
 
-> Does your application **contain a Drawer**? Do you want to have it
+> Does your application **contain a Drawer, Toolbar, Global search, Fab Buttons**? Do you want to have it
 > **up and running in less than 5 minutes**? Do you want your drawer to follow the **Angular Material Design Guidelines**? Do you have
 > **profiles**? Do you need **flexibility**? Do you want a **simple and easy** to understand api?
 
@@ -164,24 +164,29 @@ export class AppModule { }
 ### code:
 ``` javascript
 <ngx-material-drawer
-    (onMatDrawerInit) = "onMatDrawerInit($event)"
-    (onMatDrawerAfterViewInit) = "onMatDrawerAfterViewInit($event)"
-    (onNavStateChange) = "onNavStateChange($event)"
-    (onDataChange) = "onDataChange($event)"
-    (onSideNavOpen) = "onSideNavOpen($event)"
-    (onSideNavClosed) = "onSideNavClosed($event)"
-    (onMinVarientChange) = "onMinVarientChange($event)"
-    (onSideNavItemClick) = "onSideNavItemClick($event)"
-    (onSideNavItemExpanded) = "onSideNavItemExpanded($event)"
-    (onSideNavItemCollapsed) = "onSideNavItemCollapsed($event)"
-    (onMenuItemClick) = "onMenuItemClick($event)"
-    (onSerachValueChange) ="onSerachValueChange($event)"
-    (onSerachFocusIn) ="onSerachFocusIn($event)"
-    (onSerachFocusOut) ="onSerachFocusOut($event)"
-    [data]= "jsonData"
+    (onMatDrawerInit)="onMatDrawerInit($event)"
+    (onMatDrawerAfterViewInit)="onMatDrawerAfterViewInit($event)"
+    (onNavStateChange)="onNavStateChange($event)"
+    (onDataChange)="onDataChange($event)"
+    (onSideNavOpen)="onSideNavOpen($event)"
+    (onSideNavClosed)="onSideNavClosed($event)"
+    (onMinVarientChange)="onMinVarientChange($event)"
+    (onSideNavItemClick)="onSideNavItemClick($event)"
+    (onSideNavItemExpanded)="onSideNavItemExpanded($event)"
+    (onSideNavItemCollapsed)="onSideNavItemCollapsed($event)"
+    (onMenuItemClick)="onMenuItemClick($event)"
+    (onSerachValueChange)="onSerachValueChange($event)"
+    (onSerachFocusIn)="onSerachFocusIn($event)"
+    (onSerachFocusOut)="onSerachFocusOut($event)"
+    (onFabExpanded)="onFabExpanded($event)"
+    (onFabCollapsed)="onFabCollapsed($event)"
+    (onMainFabButtonClick)="onMainFabButtonClick($event)"
+    (onFabButtonClick)="onFabButtonClick($event)"
+    [data]="jsonData"
 >
-    Hello
+    <app-first></app-first>
 </ngx-material-drawer>
+
 ```
 ## 7. Provide an input JSON to the  *ngx-material-drawer*
 **Sample json [Link](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/src/drawer-config.json)**
@@ -246,6 +251,18 @@ export class AppComponent implements OnInit {
   }
   public onSerachFocusOut(event) {
     console.log("onSerachFocusOut", event);
+  }
+    public onFabExpanded(event) {
+    console.log("onFabExpanded", event);
+  }
+  public onFabCollapsed(event) {
+    console.log("onFabCollapsed", event);
+  }
+  public onMainFabButtonClick(event) {
+    console.log("onMainFabButtonClick", event);
+  }
+  public onFabButtonClick(event) {
+    console.log("onFabButtonClick", event);
   }
 }
 

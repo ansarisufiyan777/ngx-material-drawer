@@ -22,6 +22,10 @@ export class NgxMaterialDrawerEventEmitter {
   public onSearchValueChange = new Subject();
   public onSerachFocusIn = new Subject();
   public onSerachFocusOut = new Subject();
+  public onFabExpanded = new Subject();
+  public onFabCollapsed = new Subject();
+  public onMainFabButtonClick = new Subject();
+  public onFabButtonClick = new Subject();
 
   constructor() { }
   /**
@@ -154,6 +158,38 @@ export class NgxMaterialDrawerEventEmitter {
    */
   public menuItemCollapsed(event) {
     this.onMenuItemCollapsed.next(event);
+
+  }
+  /**
+ * using in toolbar menu
+ * @param event json
+ */
+  public fabExpanded(event) {
+    this.onFabExpanded.next(event);
+
+  }
+  /**
+   * using in toolbar menu
+   * @param event json
+   */
+  public fabCollapsed(event) {
+    this.onFabCollapsed.next(event);
+
+  }
+  /**
+   * using in toolbar menu
+   * @param event json
+   */
+  public mainFabButtonClick(event) {
+    this.onMainFabButtonClick.next(event);
+
+  }
+  /**
+   * using in toolbar menu
+   * @param event json
+   */
+  public fabButtonClick(event) {
+    this.onFabButtonClick.next(event);
 
   }
 }

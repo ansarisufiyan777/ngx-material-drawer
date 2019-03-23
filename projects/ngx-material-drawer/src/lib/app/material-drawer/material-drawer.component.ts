@@ -25,6 +25,12 @@ export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
   @Output() public onSideNavItemCollapsed: any = new EventEmitter();
   @Output() public onMenuItemClick: any = new EventEmitter();
   @Output() public onSerachValueChange: any = new EventEmitter();
+  @Output() public onSerachFocusIn: any = new EventEmitter();
+  @Output() public onSerachFocusOut: any = new EventEmitter();
+  @Output() public onFabExpanded: any = new EventEmitter();
+  @Output() public onFabCollapsed: any = new EventEmitter();
+  @Output() public onMainFabButtonClick: any = new EventEmitter();
+  @Output() public onFabButtonClick: any = new EventEmitter();
 
 
   //Material drawer version
@@ -85,6 +91,24 @@ export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
     })
     this.matEventEmitterService.onSearchValueChange.subscribe((event) => {
       this.onSerachValueChange.emit(event);
+    })
+    this.matEventEmitterService.onSerachFocusIn.subscribe((event) => {
+      this.onSerachFocusIn.emit(event);
+    })
+    this.matEventEmitterService.onSerachFocusOut.subscribe((event) => {
+      this.onSerachFocusOut.emit(event);
+    })
+    this.matEventEmitterService.onFabExpanded.subscribe((event) => {
+      this.onFabExpanded.emit(event);
+    })
+    this.matEventEmitterService.onFabCollapsed.subscribe((event) => {
+      this.onFabCollapsed.emit(event);
+    })
+    this.matEventEmitterService.onMainFabButtonClick.subscribe((event) => {
+      this.onMainFabButtonClick.emit(event);
+    })
+    this.matEventEmitterService.onFabButtonClick.subscribe((event) => {
+      this.onFabButtonClick.emit(event);
     })
   }
 

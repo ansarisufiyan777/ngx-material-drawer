@@ -69,4 +69,16 @@ export class AppComponent implements OnInit {
   public onSerachFocusOut(event) {
     console.log("onSerachFocusOut", event);
   }
+  public onFabExpanded(event) {
+    console.log("onFabExpanded", event);
+  }
+  public onFabCollapsed(event) {
+    console.log("onFabCollapsed", event);
+  }
+  public onMainFabButtonClick(event) {
+    console.log("onMainFabButtonClick", event);
+  }
+  public onFabButtonClick(event) {
+    console.log("onFabButtonClick", event);
+  }
 }

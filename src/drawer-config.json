@@ -21,7 +21,7 @@
     "icon": "add",
     "children": [
       {
-        "isEnable": true,
+        "isEnable": false,
         "style": {
           "background": " #f44336",
           "color": "white"
@@ -30,7 +30,7 @@
         "icon": "mood"
       },
       {
-        "isEnable": true,
+        "isEnable": false,
         "style": {
           "background": " #e91e63",
           "color": "white"
@@ -39,7 +39,7 @@
         "icon": "mood_bad"
       },
       {
-        "isEnable": true,
+        "isEnable": false,
         "style": {
           "background": " #673ab7",
           "color": "white"
@@ -48,7 +48,7 @@
         "icon": "sentiment_satisfied"
       },
       {
-        "isEnable": true,
+        "isEnable": false,
         "style": {
           "background": " #00c853",
           "color": "white"
