@@ -1,6 +1,6 @@
 ## AngularMaterialDrawer
 
-> Does your application **contain a Drawer**? Do you want to have it
+> Does your application **contain a Drawer, Toolbar, Global search, Fab Buttons**? Do you want to have it
 > **up and running in less than 5 minutes**? Do you want your drawer to follow the **Angular Material Design Guidelines**? Do you have
 > **profiles**? Do you need **flexibility**? Do you want a **simple and easy** to understand api?
 
@@ -21,7 +21,7 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
 -   **Google Material Design Icons**, Google  **Material Community**  Design Icons
 -   comes with various  **themes**  which help to get your own themes clean
 -   modify the colors on the go from the JSON data
--   **uses the Material and Javax support libraries for design and events respectively**
+-   **uses the Material and rxjs support libraries for design and events respectively**
 -   comes with multiple Heirarchical menu items
 -   Gmail like  **MiniDrawer**
 -   expandable items
@@ -38,6 +38,10 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
 ![S2](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/W-Menu.PNG)
   
 ![S1](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/MiniVariant-CLosed.PNG)
+
+![S5](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/fab.PNG)
+
+![S5](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/screens/search.PNG)
 
 
 ## [Demo](https://ansarisufiyan777.github.io/ngx-material-drawer/)
@@ -164,24 +168,31 @@ export class AppModule { }
 ### code:
 ``` javascript
 <ngx-material-drawer
-    (onMatDrawerInit) = "onMatDrawerInit($event)"
-    (onMatDrawerAfterViewInit) = "onMatDrawerAfterViewInit($event)"
-    (onNavStateChange) = "onNavStateChange($event)"
-    (onDataChange) = "onDataChange($event)"
-    (onSideNavOpen) = "onSideNavOpen($event)"
-    (onSideNavClosed) = "onSideNavClosed($event)"
-    (onMinVarientChange) = "onMinVarientChange($event)"
-    (onSideNavItemClick) = "onSideNavItemClick($event)"
-    (onSideNavItemExpanded) = "onSideNavItemExpanded($event)"
-    (onSideNavItemCollapsed) = "onSideNavItemCollapsed($event)"
-    (onMenuItemClick) = "onMenuItemClick($event)"
-    (onSerachValueChange) ="onSerachValueChange($event)"
-    (onSerachFocusIn) ="onSerachFocusIn($event)"
-    (onSerachFocusOut) ="onSerachFocusOut($event)"
-    [data]= "jsonData"
+     (onMatDrawerInit)="onMatDrawerInit($event)"
+    (onMatDrawerAfterViewInit)="onMatDrawerAfterViewInit($event)"
+    (onNavStateChange)="onNavStateChange($event)"
+    (onDataChange)="onDataChange($event)"
+    (onSideNavOpen)="onSideNavOpen($event)"
+    (onSideNavClosed)="onSideNavClosed($event)"
+    (onMinVarientChange)="onMinVarientChange($event)"
+    (onSideNavItemClick)="onSideNavItemClick($event)"
+    (onSideNavItemExpanded)="onSideNavItemExpanded($event)"
+    (onSideNavItemCollapsed)="onSideNavItemCollapsed($event)"
+    (onMenuItemClick)="onMenuItemClick($event)"
+    (onSerachValueChange)="onSerachValueChange($event)"
+    (onSerachFocusIn)="onSerachFocusIn($event)"
+    (onSerachFocusOut)="onSerachFocusOut($event)"
+    (onFabExpanded)="onFabExpanded($event)"
+    (onFabCollapsed)="onFabCollapsed($event)"
+    (onMainFabButtonClick)="onMainFabButtonClick($event)"
+    (onFabButtonClick)="onFabButtonClick($event)"
+    (onSerachInputOpen)="onSerachInputOpen($event)"
+    (onSerachInputClosed)="onSerachInputClosed($event)"
+    [data]="jsonData"
 >
-    Hello
+    <app-first></app-first>
 </ngx-material-drawer>
+
 ```
 ## 7. Provide an input JSON to the  *ngx-material-drawer*
 **Sample json [Link](https://raw.githubusercontent.com/ansarisufiyan777/ngx-material-drawer/master/src/drawer-config.json)**
@@ -189,50 +200,62 @@ export class AppModule { }
 
 ``` javascript
 import { Component, ViewChild, ElementRef, ViewEncapsulation, AfterViewInit, Input, Output, OnInit } from '@angular/core';
+let content = require('../drawer-config.json');
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'angular-material-drawer',
+  templateUrl: 'app.component.html',
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
-  public jsonData: any = { place the sample json present in the title link };
+  public jsonData: any;
 
   constructor() {
   }
 
   ngOnInit() {
+    this.jsonData = content;
   }
+
   public onMatDrawerInit(event) {
     console.log("onMatDrawerInit", event);
+
   }
   public onMatDrawerAfterViewInit(event) {
     console.log("onMatDrawerAfterViewInit", event);
+
   }
   public onNavStateChange(event) {
     console.log("onNavStateChange", event);
+
   }
   public onDataChange(event) {
     console.log("onDataChange", event);
+
   }
   public onSideNavOpen(event) {
     console.log("onSideNavOpen", event);
+
   }
   public onSideNavClosed(event) {
     console.log("onSideNavClosed", event);
+
   }
   public onMinVarientChange(event) {
     console.log("onMinVarientChange", event);
+
   }
   public onSideNavItemClick(event) {
     console.log("onSideNavItemClick", event);
+
   }
   public onSideNavItemExpanded(event) {
     console.log("onSideNavItemExpanded", event);
+
   }
   public onSideNavItemCollapsed(event) {
     console.log("onSideNavItemCollapsed", event);
+
   }
   public onMenuItemClick(event) {
     console.log("onMenuItemClick", event);
@@ -247,7 +270,26 @@ export class AppComponent implements OnInit {
   public onSerachFocusOut(event) {
     console.log("onSerachFocusOut", event);
   }
+  public onFabExpanded(event) {
+    console.log("onFabExpanded", event);
+  }
+  public onFabCollapsed(event) {
+    console.log("onFabCollapsed", event);
+  }
+  public onMainFabButtonClick(event) {
+    console.log("onMainFabButtonClick", event);
+  }
+  public onFabButtonClick(event) {
+    console.log("onFabButtonClick", event);
+  }
+  public onSerachInputOpen(event) {
+    console.log("onSerachInputOpen", event);
+  }
+  public onSerachInputClosed(event) {
+    console.log("onSerachInputClosed", event);
+  }
 }
+
 
 ```
 

@@ -54,6 +54,16 @@ export class NgxTopNavComponent implements OnInit {
 
   public toggleSearchBar() {
     this.isSearchActive = !this.isSearchActive;
+    let searchObject = {
+      value: this.searchValue,
+      inputRef: this.ngxSearchBox
+    }
+    if(this.isSearchActive){
+      this.matEventEmitterService.serachInputOpen(searchObject)
+    }else{
+      this.matEventEmitterService.serachInputClosed(searchObject)
+
+    }
   }
 
   public onSearchValueChange(event) {

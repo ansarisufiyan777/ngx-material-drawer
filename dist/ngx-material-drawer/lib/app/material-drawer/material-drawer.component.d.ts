@@ -18,6 +18,14 @@ export declare class NgxMaterialDrawerComponent implements AfterViewInit, OnInit
     onSideNavItemCollapsed: any;
     onMenuItemClick: any;
     onSerachValueChange: any;
+    onSerachFocusIn: any;
+    onSerachFocusOut: any;
+    onSerachInputOpen: any;
+    onSerachInputClosed: any;
+    onFabExpanded: any;
+    onFabCollapsed: any;
+    onMainFabButtonClick: any;
+    onFabButtonClick: any;
     version: import("@angular/core/src/version").Version;
     constructor(navService: NgxNavService, matEventEmitterService: NgxMaterialDrawerEventEmitter);
     ngOnInit(): void;

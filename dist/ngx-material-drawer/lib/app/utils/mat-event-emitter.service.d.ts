@@ -17,6 +17,12 @@ export declare class NgxMaterialDrawerEventEmitter {
     onSearchValueChange: Subject<{}>;
     onSerachFocusIn: Subject<{}>;
     onSerachFocusOut: Subject<{}>;
+    onSerachInputOpen: Subject<{}>;
+    onSerachInputClosed: Subject<{}>;
+    onFabExpanded: Subject<{}>;
+    onFabCollapsed: Subject<{}>;
+    onMainFabButtonClick: Subject<{}>;
+    onFabButtonClick: Subject<{}>;
     constructor();
     /**
      * Material drawer Main component life cycle
@@ -54,6 +60,22 @@ export declare class NgxMaterialDrawerEventEmitter {
      * @param searchObject containing value and input search object
      */
     serachFocusOut(searchObject: {
+        value: string;
+        inputRef: ElementRef<any>;
+    }): any;
+    /**
+     * On Search focusout
+     * @param searchObject containing value and input search object
+     */
+    serachInputOpen(searchObject: {
+        value: string;
+        inputRef: ElementRef<any>;
+    }): any;
+    /**
+     * On Search focusout
+     * @param searchObject containing value and input search object
+     */
+    serachInputClosed(searchObject: {
         value: string;
         inputRef: ElementRef<any>;
     }): any;
@@ -107,4 +129,24 @@ export declare class NgxMaterialDrawerEventEmitter {
      * @param event json
      */
     menuItemCollapsed(event: any): void;
+    /**
+   * using in toolbar menu
+   * @param event json
+   */
+    fabExpanded(event: any): void;
+    /**
+     * using in toolbar menu
+     * @param event json
+     */
+    fabCollapsed(event: any): void;
+    /**
+     * using in toolbar menu
+     * @param event json
+     */
+    mainFabButtonClick(event: any): void;
+    /**
+     * using in toolbar menu
+     * @param event json
+     */
+    fabButtonClick(event: any): void;
 }

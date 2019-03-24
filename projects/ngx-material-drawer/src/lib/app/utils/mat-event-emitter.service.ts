@@ -22,6 +22,8 @@ export class NgxMaterialDrawerEventEmitter {
   public onSearchValueChange = new Subject();
   public onSerachFocusIn = new Subject();
   public onSerachFocusOut = new Subject();
+  public onSerachInputOpen = new Subject();
+  public onSerachInputClosed = new Subject();
   public onFabExpanded = new Subject();
   public onFabCollapsed = new Subject();
   public onMainFabButtonClick = new Subject();
@@ -75,6 +77,20 @@ export class NgxMaterialDrawerEventEmitter {
    */
   public serachFocusOut(searchObject: { value: string; inputRef: ElementRef<any>; }): any {
     this.onSerachFocusOut.next(searchObject);
+  }
+  /**
+   * On Search focusout
+   * @param searchObject containing value and input search object
+   */
+  public serachInputOpen(searchObject: { value: string; inputRef: ElementRef<any>; }): any {
+    this.onSerachInputOpen.next(searchObject);
+  }
+  /**
+   * On Search focusout
+   * @param searchObject containing value and input search object
+   */
+  public serachInputClosed(searchObject: { value: string; inputRef: ElementRef<any>; }): any {
+    this.onSerachInputClosed.next(searchObject);
   }
 
   /**

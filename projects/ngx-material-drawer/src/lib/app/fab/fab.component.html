@@ -19,7 +19,7 @@
     </div>
     <button
         mat-fab
-        [matTooltip]="item?.tooltip"
+        [matTooltip]="fabData?.tooltip"
         *ngIf="fabData?.isEnable"
         [ngStyle]="fabData?.style? fabData?.style : ''"
         (click)="onMainFabClick(fabData)"

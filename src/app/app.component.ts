@@ -81,4 +81,10 @@ export class AppComponent implements OnInit {
   public onFabButtonClick(event) {
     console.log("onFabButtonClick", event);
   }
+  public onSerachInputOpen(event) {
+    console.log("onSerachInputOpen", event);
+  }
+  public onSerachInputClosed(event) {
+    console.log("onSerachInputClosed", event);
+  }
 }

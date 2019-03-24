@@ -2,6 +2,7 @@
  * Generated bundle index. Do not edit.
  */
 export * from './public_api';
+export { NgxFabComponent as ɵg } from './lib/app/fab/fab.component';
 export { MaterialModule as ɵb } from './lib/app/material.module';
 export { NgxMenuListItemComponent as ɵd } from './lib/app/menu-list-item/menu-list-item.component';
 export { NgxNavListItemMiniComponent as ɵf } from './lib/app/nav-list-item-mini/nav-list-item-mini.component';

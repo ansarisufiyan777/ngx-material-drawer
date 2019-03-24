@@ -27,6 +27,8 @@ export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
   @Output() public onSerachValueChange: any = new EventEmitter();
   @Output() public onSerachFocusIn: any = new EventEmitter();
   @Output() public onSerachFocusOut: any = new EventEmitter();
+  @Output() public onSerachInputOpen: any = new EventEmitter();
+  @Output() public onSerachInputClosed: any = new EventEmitter();
   @Output() public onFabExpanded: any = new EventEmitter();
   @Output() public onFabCollapsed: any = new EventEmitter();
   @Output() public onMainFabButtonClick: any = new EventEmitter();
@@ -109,6 +111,14 @@ export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
     })
     this.matEventEmitterService.onFabButtonClick.subscribe((event) => {
       this.onFabButtonClick.emit(event);
+    })
+
+    this.matEventEmitterService.onSerachInputOpen.subscribe((event) => {
+      this.onSerachInputOpen.emit(event);
+    })
+
+    this.matEventEmitterService.onSerachInputClosed.subscribe((event) => {
+      this.onSerachInputClosed.emit(event);
     })
   }
 
