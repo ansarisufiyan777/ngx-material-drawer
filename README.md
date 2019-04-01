@@ -1,6 +1,6 @@
 ## AngularMaterialDrawer [![npm][npm_img]][npm_url]
 
-[npm_img]: https://img.shields.io/npm/v/pdfmake.svg?colorB=0E7FBF
+[npm_img]: https://img.shields.io/npm/v/ngx-material-drawer.svg?colorB=0E7FBF
 [npm_url]: https://www.npmjs.com/package/ngx-material-drawer
 
 > Does your application **contain a Drawer, Toolbar, Global search, Fab Buttons**? Do you want to have it
