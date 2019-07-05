@@ -3,6 +3,7 @@
   "opened": false,
   "mode": "push",
   "toggleIcon": "menu",
+  "closedToggleIcon": "close",
   "miniVarient": false,
   "search": {
     "isEnable": true,

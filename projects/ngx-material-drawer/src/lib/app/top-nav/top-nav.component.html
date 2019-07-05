@@ -3,10 +3,6 @@
     class="mat-elevation-z1 ngx-material-toolbar"
 >
     <ng-container *ngIf="!isSearchActive">
-
-
-
-
         <!-- DrawerToggle menu -->
         <button
             class="btn-toggle"
@@ -17,12 +13,17 @@
             <!-- <mat-icon>{{config?.toggleIcon ? config.toggleIcon : 'menu'}}</mat-icon> -->
             <div
                 class="wrapper-menu"
+                *ngIf="!config?.toggleIcon"
                 [ngClass]="isDrawerOpened ? 'open' : 'close'"
             >
                 <div class="line-menu half start"></div>
                 <div class="line-menu"></div>
                 <div class="line-menu half end"></div>
             </div>
+            <ng-container *ngIf="config?.toggleIcon">
+                <mat-icon>{{!isDrawerOpened ? config.toggleIcon : config?.closedToggleIcon ? config?.closedToggleIcon : 'close'}}</mat-icon>
+            </ng-container>
+            
         </button>
         <span>
             {{config?.appName ? config.appName : 'Default name'}}
