@@ -3,11 +3,11 @@ import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
 import { NgxMaterialDrawerEventEmitter } from 'projects/ngx-material-drawer/src/public_api';
 
 @Component({
-  selector: 'app-first',
-  templateUrl: './first.component.html',
-  styleUrls: ['./first.component.scss']
+  selector: 'app-json-editor',
+  templateUrl: './json-editor.component.html',
+  styleUrls: ['./json-editor.component.scss']
 })
-export class FirstComponent implements OnInit {
+export class EditorComponent implements OnInit {
   public editorOptions: JsonEditorOptions;
   public data: any;
   public navData: any;

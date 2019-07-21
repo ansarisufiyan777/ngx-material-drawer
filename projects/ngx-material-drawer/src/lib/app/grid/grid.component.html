@@ -1,0 +1,7 @@
+<div class="grid-container">  
+  <mat-grid-list cols="2" rowHeight="350px">  
+    <mat-grid-tile *ngFor="let card of data" [colspan]="card.cols" [rowspan]="card.rows">  
+      <lib-card-holder [data]='card'></lib-card-holder>
+    </mat-grid-tile>  
+  </mat-grid-list>  
+</div>

@@ -43,7 +43,7 @@
 //Mini Variant
 
 .mini-drawer {
-    width: 60px;
+    width: 50px;
     transition: 300ms;
     transform: translate3d(-100%,0,0);
     /deep/ .mat-drawer-inner-container {
@@ -52,5 +52,5 @@
 }
 
 .main-container-on-mini-variant {
-    width: calc(100% - 60px);
+    width: calc(100% - 50px);
 }

@@ -5,10 +5,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FirstComponent } from './first/first.component';
 import { NgJsonEditorModule } from 'ang-jsoneditor';
-import { MaterialModule } from './material.module';
 import { NgxMaterialDrawerModule } from 'projects/ngx-material-drawer/src/public_api';
+import { EditorComponent } from './json-editor/json-editor.component';
+import { BlueCardComponent } from './cards/blue-card/blue-card.component';
+import { RedCardComponent } from './cards/red-card/red-card.component';
+import { GreenCardComponent } from './cards/green-card/green-card.component';
+import { GridComponent } from './cards/grid/grid.component';
+import { MaterialModule } from './material.module';
 
 
 @NgModule({
@@ -20,12 +24,20 @@ import { NgxMaterialDrawerModule } from 'projects/ngx-material-drawer/src/public
     BrowserAnimationsModule,
     FlexLayoutModule,
     NgJsonEditorModule,
-    NgxMaterialDrawerModule
+    NgxMaterialDrawerModule,
+    MaterialModule
   ],
   declarations: [
     AppComponent,
-    FirstComponent,
+    EditorComponent,
+    BlueCardComponent,
+    RedCardComponent,
+    GreenCardComponent,
+    GridComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,
+    BlueCardComponent,
+    RedCardComponent,
+    GreenCardComponent] //Entry Component
 })
 export class AppModule { }

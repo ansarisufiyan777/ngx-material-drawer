@@ -12,6 +12,9 @@ import { NgxNavListItemMiniComponent } from './nav-list-item-mini/nav-list-item-
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 import { NgxFabComponent } from './fab/fab.component';
+import { NgxGridComponent } from './grid/grid.component';
+import { CardHolderComponent } from './card-holder/card-holder.component';
+import { CardDirective } from './directive/card.directive';
 
 
 @NgModule({
@@ -29,10 +32,13 @@ import { NgxFabComponent } from './fab/fab.component';
     NgxMaterialDrawerComponent,
     NgxTopNavComponent,
     NgxNavListItemMiniComponent,
-    NgxFabComponent
+    NgxFabComponent,
+    NgxGridComponent,
+    CardHolderComponent,
+    CardDirective
   ],
   bootstrap: [NgxMaterialDrawerComponent],
   providers: [NgxNavService],
-  exports:[NgxMaterialDrawerComponent]
+  exports:[NgxMaterialDrawerComponent,NgxGridComponent]
 })
 export class NgxMaterialDrawerModule { }
