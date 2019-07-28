@@ -5,7 +5,7 @@ import { MatMenu } from '@angular/material';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 
 @Component({
-  selector: 'app-menu-list-item',
+  selector: 'lib-menu-list-item',
   templateUrl: './menu-list-item.component.html',
   styleUrls: ['./menu-list-item.component.scss'],
   exportAs: 'menuInMenuListItemComponent'

@@ -10,6 +10,7 @@ export class NgxMaterialDrawerEventEmitter {
   public onMatDrawerAfterViewInit = new Subject();
   public onNavStateChange = new Subject();
   public onDataChange = new ReplaySubject(1);
+  public onGridDataChange = new ReplaySubject(1);
   public onSideNavOpen = new Subject();
   public onSideNavClosed = new Subject();
   public onMinVarientChange = new Subject();
@@ -99,6 +100,14 @@ export class NgxMaterialDrawerEventEmitter {
    */
   public dataChange(event) {
     this.onDataChange.next(event);
+
+  }
+  /**
+   * on data chamge
+   * @param event new json
+   */
+  public gridDataChange(event) {
+    this.onGridDataChange.next(event);
 
   }
 

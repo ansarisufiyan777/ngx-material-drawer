@@ -5,7 +5,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 
 @Component({
-  selector: 'app-nav-list-item-mini',
+  selector: 'lib-nav-list-item-mini',
   templateUrl: './nav-list-item-mini.component.html',
   styleUrls: ['./nav-list-item-mini.component.scss'],
   animations: [

@@ -12,6 +12,7 @@ export class GreenCardComponent implements OnInit,INgxCard {
   constructor() { }
 
   ngOnInit() {
+    // console.log(this.data)
   }
 
 }

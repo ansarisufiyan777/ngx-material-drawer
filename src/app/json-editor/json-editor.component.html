@@ -1,6 +1,5 @@
-<div class="container">
-  <h3 style="text-transform: uppercase">
-    Create Enterprise UIs that your users will love
-  </h3>
-  <json-editor style="height: 700px;" [options]="editorOptions" [data]="navData" (change)="getData($event)"></json-editor>
-</div>
+
+  <json-editor style="height: 700px;" [options]="editorOptions" [data]="data" (change)="getData($event)"></json-editor>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCloseClick()">Change Data</button>
+  </div>

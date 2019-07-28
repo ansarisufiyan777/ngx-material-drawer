@@ -8,10 +8,10 @@
     <mat-icon class="routeIcon">{{item.iconName}}</mat-icon>
 </a>
 <div *ngIf="expanded">
-    <app-nav-list-item-mini
+    <lib-nav-list-item-mini
         *ngFor="let child of item.children"
         [item]="child"
         [depth]="depth+1"
     >
-    </app-nav-list-item-mini>
+    </lib-nav-list-item-mini>
 </div>

@@ -15,10 +15,10 @@
                 <mat-icon>{{child.iconName}}</mat-icon>
                 <span>{{child.displayName}}</span>
             </button>
-            <app-menu-list-item
+            <lib-menu-list-item
                 #menu
                 [menus]="child.children"
-            ></app-menu-list-item>
+            ></lib-menu-list-item>
         </span>
         <!-- Handle leaf node menu items -->
         <span *ngIf="!child.children || child.children.length === 0">

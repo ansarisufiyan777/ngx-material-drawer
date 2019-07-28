@@ -65,10 +65,10 @@
                         >
                             <mat-icon>{{item.iconName}}</mat-icon>
                         </button>
-                        <app-menu-list-item
+                        <lib-menu-list-item
                             #menu
                             [menus]="item.children"
-                        ></app-menu-list-item>
+                        ></lib-menu-list-item>
                     </span>
                     <!-- Leaf node buttons here -->
                     <span *ngIf="!item.children || item.children.length === 0">

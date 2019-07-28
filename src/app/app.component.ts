@@ -1,4 +1,7 @@
 import { Component, ViewChild, ElementRef, ViewEncapsulation, AfterViewInit, Input, Output, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { JsonEditorComponent } from 'ang-jsoneditor';
+import { EditorComponent } from './json-editor/json-editor.component';
 let content = require('../drawer-config.json');
 
 @Component({
@@ -9,7 +12,7 @@ let content = require('../drawer-config.json');
 export class AppComponent implements OnInit {
   public jsonData: any;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
   }
 
   ngOnInit() {
@@ -30,6 +33,10 @@ export class AppComponent implements OnInit {
   }
   public onDataChange(event) {
     console.log("onDataChange", event);
+
+  }
+  public onGridDataChange(event) {
+    console.log("onGridDataChange", event);
 
   }
   public onSideNavOpen(event) {
@@ -58,6 +65,17 @@ export class AppComponent implements OnInit {
   }
   public onMenuItemClick(event) {
     console.log("onMenuItemClick", event);
+    if (event.route == 'open-drawer-menu-json') {
+      const dialogRef = this.dialog.open(EditorComponent, {
+        width: '90%',
+        data: this.jsonData
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed');
+        this.jsonData = result;
+      });
+    }
   }
   public onSerachValueChange(event) {
     console.log("onSerachValueChange", event);

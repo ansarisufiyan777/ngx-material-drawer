@@ -16,10 +16,10 @@
     </span>
 </a>
 <div *ngIf="expanded">
-    <app-nav-list-item
+    <lib-nav-list-item
         *ngFor="let child of item.children"
         [item]="child"
         [depth]="depth+1"
     >
-    </app-nav-list-item>
+    </lib-nav-list-item>
 </div>

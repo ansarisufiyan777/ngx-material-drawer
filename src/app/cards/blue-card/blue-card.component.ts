@@ -6,11 +6,12 @@ import { INgxCard } from 'projects/ngx-material-drawer/src/lib/app/interface';
   templateUrl: './blue-card.component.html',
   styleUrls: ['./blue-card.component.scss']
 })
-export class BlueCardComponent implements OnInit,INgxCard {
+export class BlueCardComponent implements OnInit, INgxCard {
   @Input() data;
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

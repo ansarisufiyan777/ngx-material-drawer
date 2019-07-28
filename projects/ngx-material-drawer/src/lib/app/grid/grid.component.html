@@ -1,7 +1,15 @@
-<div class="grid-container">  
-  <mat-grid-list cols="2" rowHeight="350px">  
-    <mat-grid-tile *ngFor="let card of data" [colspan]="card.cols" [rowspan]="card.rows">  
-      <lib-card-holder [data]='card'></lib-card-holder>
-    </mat-grid-tile>  
-  </mat-grid-list>  
+<div class="grid-container">
+    <mat-grid-list
+        [cols]="gridData?.cols || inputData?.cols || 4"
+        [rowHeight]="gridData?.rowHeight || inputData?.rowHeight || '200px'"
+        [gutterSize]="gridData?.gutterSize || inputData?.gutterSize || '0px'"
+    >
+        <mat-grid-tile
+            *ngFor="let card of gridData"
+            [colspan]="card.cols"
+            [rowspan]="card.rows"
+        >
+            <lib-card-holder [cardData]='getExtendedData(card)'></lib-card-holder>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

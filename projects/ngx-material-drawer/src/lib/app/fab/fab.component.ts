@@ -5,7 +5,7 @@ import { MatMenu } from '@angular/material';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 
 @Component({
-    selector: 'app-fab',
+    selector: 'lib-fab',
     templateUrl: './fab.component.html',
     styleUrls: ['./fab.component.scss'],
     animations: [

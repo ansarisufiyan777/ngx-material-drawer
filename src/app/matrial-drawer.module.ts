@@ -11,7 +11,7 @@ import { EditorComponent } from './json-editor/json-editor.component';
 import { BlueCardComponent } from './cards/blue-card/blue-card.component';
 import { RedCardComponent } from './cards/red-card/red-card.component';
 import { GreenCardComponent } from './cards/green-card/green-card.component';
-import { GridComponent } from './cards/grid/grid.component';
+import { GridContainerComponent } from './cards/grid-container/grid-container.component';
 import { MaterialModule } from './material.module';
 
 
@@ -33,11 +33,15 @@ import { MaterialModule } from './material.module';
     BlueCardComponent,
     RedCardComponent,
     GreenCardComponent,
-    GridComponent
+    GridContainerComponent
   ],
-  bootstrap: [AppComponent,
+  // Dynamic components
+  entryComponents:[ 
     BlueCardComponent,
     RedCardComponent,
-    GreenCardComponent] //Entry Component
+    GreenCardComponent,
+    EditorComponent
+  ],
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }

@@ -5,7 +5,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
 
 
 @Component({
-  selector: 'app-top-nav',
+  selector: 'lib-top-nav',
   templateUrl: './top-nav.component.html',
   styleUrls: ['./top-nav.component.scss'],
   animations: [

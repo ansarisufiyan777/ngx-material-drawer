@@ -7,7 +7,7 @@
   "miniVarient": false,
   "search": {
     "isEnable": true,
-    "placeHolder": "Searc, Discover, Explore...",
+    "placeHolder": "Search, Discover, Explore...",
     "style": {},
     "searchIcon": "search",
     "clearIcon": "clear"
@@ -63,12 +63,14 @@
   "rightMenus": {
     "data": [
       {
-        "displayName": "",
-        "iconName": "more_vert",
-        "route": "devfestfl",
-        "style": {
-          "background-color": "rgb(225, 0, 80)"
-        }
+        "displayName": "Edit Drawer/Menu JSON",
+        "iconName": "edit",
+        "route": "open-drawer-menu-json"
+      },
+      {
+        "displayName": "Edit Dashboard JSON",
+        "iconName": "edit",
+        "route": "open-dashboard-json"
       },
       {
         "displayName": "devfestfl",

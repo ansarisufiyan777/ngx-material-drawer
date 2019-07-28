@@ -1,8 +1,8 @@
-<app-top-nav
+<lib-top-nav
     [config]="navData"
     class="fixed-topnav"
-></app-top-nav>
-<!-- <app-top-nav [config]="navData?" class="fixed-topnav"></app-top-nav> -->
+></lib-top-nav>
+<!-- <lib-top-nav [config]="navData?" class="fixed-topnav"></lib-top-nav> -->
 <mat-sidenav-container
     [hasBackdrop]="navData?.hasBackdrop"
     autosize
@@ -16,16 +16,16 @@
         [opened]="navData?.miniVarient ? 'open' : navData?.opened"
     >
         <mat-nav-list *ngIf="!navData?.miniVarient || navData?.miniVarient && navService?.isOpened">
-            <app-nav-list-item
+            <lib-nav-list-item
                 *ngFor="let item of navData?.navItems?.data"
                 [item]="item"
-            ></app-nav-list-item>
+            ></lib-nav-list-item>
         </mat-nav-list>
         <mat-nav-list *ngIf="navData?.miniVarient && !navService?.isOpened">
-            <app-nav-list-item-mini
+            <lib-nav-list-item-mini
                 *ngFor="let item of navData?.navItems?.data"
                 [item]="item"
-            ></app-nav-list-item-mini>
+            ></lib-nav-list-item-mini>
         </mat-nav-list>
     </mat-sidenav>
     <div [ngClass]="navData?.miniVarient ? 'main-container-on-mini-variant' :''">
@@ -35,4 +35,4 @@
 
 
 <!-- Fab Buttons -->
-<app-fab [fabData]="navData?.fabs"></app-fab>
+<lib-fab [fabData]="navData?.fabs"></lib-fab>
