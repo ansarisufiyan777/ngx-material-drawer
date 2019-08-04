@@ -24,7 +24,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
   ],
 })
 export class NgxTopNavComponent implements OnInit {
-  @ViewChild("ngxSearchBox") ngxSearchBox: ElementRef;
+  @ViewChild("ngxSearchBox",{static: false}) ngxSearchBox: ElementRef;
   @Input() config: any;
   constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter, public navService: NgxNavService) { }
   public isDrawerOpened;

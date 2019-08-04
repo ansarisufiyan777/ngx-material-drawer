@@ -11,7 +11,7 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
   styleUrls: ['./json-editor.component.scss']
 })
 export class EditorComponent implements OnInit {
-  @ViewChild(JsonEditorComponent) editor: JsonEditorComponent;
+  @ViewChild(JsonEditorComponent,{static: false}) editor: JsonEditorComponent;
   public editorOptions: JsonEditorOptions;
   public data: any;
   public fg: FormGroup;

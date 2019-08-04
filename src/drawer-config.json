@@ -63,17 +63,24 @@
   "rightMenus": {
     "data": [
       {
-        "displayName": "Edit Drawer/Menu JSON",
+        "displayName": "",
         "iconName": "edit",
-        "route": "open-drawer-menu-json"
+        "route": "edit-json",
+        "children": [
+          {
+            "displayName": "Edit Drawer/Menu JSON",
+            "iconName": "edit",
+            "route": "open-drawer-menu-json"
+          },
+          {
+            "displayName": "Edit Dashboard JSON",
+            "iconName": "edit",
+            "route": "open-dashboard-json"
+          }
+        ]
       },
       {
-        "displayName": "Edit Dashboard JSON",
-        "iconName": "edit",
-        "route": "open-dashboard-json"
-      },
-      {
-        "displayName": "devfestfl",
+        "displayName": "Demo",
         "iconName": "more_vert",
         "route": "devfestfl",
         "children": [

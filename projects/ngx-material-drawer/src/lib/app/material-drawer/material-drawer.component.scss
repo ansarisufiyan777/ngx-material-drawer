@@ -46,7 +46,7 @@
     width: 50px;
     transition: 300ms;
     transform: translate3d(-100%,0,0);
-    /deep/ .mat-drawer-inner-container {
+    ::ng-deep .mat-drawer-inner-container {
         overflow: hidden;
     }
 }
