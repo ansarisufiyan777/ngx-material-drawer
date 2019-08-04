@@ -9,7 +9,7 @@ import { INgxCard } from '../interface';
 })
 export class CardHolderComponent implements OnInit {
   @Input() cardData;
-  @ViewChild(CardDirective,{static: false}) cardHost: CardDirective;
+  @ViewChild(CardDirective,{static: true}) cardHost: CardDirective;
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
   ngOnInit() {
