@@ -17,8 +17,8 @@ export class NgxGridComponent implements OnInit {
   public size$: Observable<string>;
   constructor(private _breakpointObserverService: BreakpointObserverService, public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
     this.matEventEmitterService.onGridDataChange.subscribe((event) => {
-      if (this.inputData['grids']) {
-        this.refreshGrid(this.inputData['grids'],this.size)
+      if (event) {
+        this.refreshGrid(event['grids'],this.size)
       } else if (this.inputData['grid']) {
         this.gridData = this.inputData.grid;
       }

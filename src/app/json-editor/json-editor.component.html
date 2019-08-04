@@ -1,5 +1,7 @@
-
-  <json-editor style="height: 700px;" [options]="editorOptions" [data]="data" (change)="getData($event)"></json-editor>
+<form  [formGroup]="fg">
+  <json-editor style="height: 700px;" [options]="editorOptions" formControlName="jsonEditorForm"></json-editor>
+</form>
+  
   <div mat-dialog-actions>
     <button mat-button (click)="onCloseClick()">Change Data</button>
   </div>

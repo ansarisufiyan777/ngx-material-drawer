@@ -28,11 +28,11 @@ export class GridContainerComponent implements OnInit {
       xl: {
         grid: [
           { cols: 6, rows: 1, component: 'c1' },
-          { cols: 6, rows: 1, component: 'c2' },
-          { cols: 12, rows: 2, component: 'c3' },
-          { cols: 4, rows: 1, component: 'c4' },
-          { cols: 4, rows: 1, component: 'c5' },
-          { cols: 4, rows: 1, component: 'c6' },
+          // { cols: 6, rows: 1, component: 'c2' },
+          // { cols: 12, rows: 2, component: 'c3' },
+          // { cols: 4, rows: 1, component: 'c4' },
+          // { cols: 4, rows: 1, component: 'c5' },
+          // { cols: 4, rows: 1, component: 'c6' },
         ]
       },
       sm: {
@@ -49,17 +49,19 @@ export class GridContainerComponent implements OnInit {
   }
 
   constructor(public dialog: MatDialog, public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
-    this.matEventEmitterService.onMenuItemClick.subscribe((event:any) =>{
+    this.matEventEmitterService.onMenuItemClick.subscribe((event: any) => {
       if (event.route == 'open-dashboard-json') {
         const dialogRef = this.dialog.open(EditorComponent, {
           width: '80%',
           data: this.gridData
         });
-  
+
         dialogRef.afterClosed().subscribe(result => {
           console.log('The dialog was closed');
-          this.gridData = result;
-          this.matEventEmitterService.gridDataChange(this.gridData)
+          if (result) {
+            this.gridData = result;
+            this.matEventEmitterService.gridDataChange(this.gridData)
+          }
         });
       }
     })
