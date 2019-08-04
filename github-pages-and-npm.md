@@ -7,3 +7,6 @@
 
 # NPM Publish
 
+>> ng build ngx-material-drawer
+>> cd .\dist\ngx-material-drawer\
+>> npm publish
