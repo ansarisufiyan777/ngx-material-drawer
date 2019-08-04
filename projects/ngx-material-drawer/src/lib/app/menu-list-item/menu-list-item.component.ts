@@ -13,7 +13,7 @@ import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.servic
 export class NgxMenuListItemComponent implements OnInit {
   expanded: boolean;
   @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
-  @ViewChild('childMenu') public childMenu;
+  @ViewChild('childMenu',{static: true}) public childMenu:any;
   @Input() menus: any;
   @Input() depth: number;
   @Input() matMenu: MatMenu;
