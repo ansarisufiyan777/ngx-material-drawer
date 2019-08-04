@@ -2,6 +2,7 @@ import { Component, ViewChild, ElementRef, ViewEncapsulation, AfterViewInit, Inp
 import { MatDialog } from '@angular/material';
 import { JsonEditorComponent } from 'ang-jsoneditor';
 import { EditorComponent } from './json-editor/json-editor.component';
+import { NgxMaterialDrawerEventEmitter } from 'projects/ngx-material-drawer/src/public_api';
 let content = require('../drawer-config.json');
 
 @Component({
@@ -12,7 +13,7 @@ let content = require('../drawer-config.json');
 export class AppComponent implements OnInit {
   public jsonData: any;
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
   }
 
   ngOnInit() {
@@ -73,7 +74,10 @@ export class AppComponent implements OnInit {
 
       dialogRef.afterClosed().subscribe(result => {
         console.log('The dialog was closed');
-        this.jsonData = result;
+        if (result) {
+          this.jsonData = result;
+          this.matEventEmitterService.dataChange(this.jsonData);
+        }
       });
     }
   }
