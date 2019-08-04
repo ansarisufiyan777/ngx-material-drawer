@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BlueCardComponent } from '../blue-card/blue-card.component';
 import { RedCardComponent } from '../red-card/red-card.component';
 import { GreenCardComponent } from '../green-card/green-card.component';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { NgxMaterialDrawerEventEmitter } from 'projects/ngx-material-drawer/src/public_api';
 import { EditorComponent } from 'src/app/json-editor/json-editor.component';
 

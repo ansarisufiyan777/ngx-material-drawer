@@ -1,28 +1,29 @@
 import { ElementRef } from '@angular/core';
 import { Subject, ReplaySubject } from 'rxjs';
 export declare class NgxMaterialDrawerEventEmitter {
-    onMatDrawerInit: Subject<{}>;
-    onMatDrawerAfterViewInit: Subject<{}>;
-    onNavStateChange: Subject<{}>;
-    onDataChange: ReplaySubject<{}>;
-    onSideNavOpen: Subject<{}>;
-    onSideNavClosed: Subject<{}>;
-    onMinVarientChange: Subject<{}>;
-    onSideNavItemClick: Subject<{}>;
-    onSideNavItemExpanded: Subject<{}>;
-    onSideNavItemCollapsed: Subject<{}>;
-    onMenuItemClick: Subject<{}>;
-    onMenuItemExpanded: Subject<{}>;
-    onMenuItemCollapsed: Subject<{}>;
-    onSearchValueChange: Subject<{}>;
-    onSerachFocusIn: Subject<{}>;
-    onSerachFocusOut: Subject<{}>;
-    onSerachInputOpen: Subject<{}>;
-    onSerachInputClosed: Subject<{}>;
-    onFabExpanded: Subject<{}>;
-    onFabCollapsed: Subject<{}>;
-    onMainFabButtonClick: Subject<{}>;
-    onFabButtonClick: Subject<{}>;
+    onMatDrawerInit: Subject<unknown>;
+    onMatDrawerAfterViewInit: Subject<unknown>;
+    onNavStateChange: Subject<unknown>;
+    onDataChange: ReplaySubject<unknown>;
+    onGridDataChange: ReplaySubject<unknown>;
+    onSideNavOpen: Subject<unknown>;
+    onSideNavClosed: Subject<unknown>;
+    onMinVarientChange: Subject<unknown>;
+    onSideNavItemClick: Subject<unknown>;
+    onSideNavItemExpanded: Subject<unknown>;
+    onSideNavItemCollapsed: Subject<unknown>;
+    onMenuItemClick: Subject<unknown>;
+    onMenuItemExpanded: Subject<unknown>;
+    onMenuItemCollapsed: Subject<unknown>;
+    onSearchValueChange: Subject<unknown>;
+    onSerachFocusIn: Subject<unknown>;
+    onSerachFocusOut: Subject<unknown>;
+    onSerachInputOpen: Subject<unknown>;
+    onSerachInputClosed: Subject<unknown>;
+    onFabExpanded: Subject<unknown>;
+    onFabCollapsed: Subject<unknown>;
+    onMainFabButtonClick: Subject<unknown>;
+    onFabButtonClick: Subject<unknown>;
     constructor();
     /**
      * Material drawer Main component life cycle
@@ -84,6 +85,11 @@ export declare class NgxMaterialDrawerEventEmitter {
      * @param event new json
      */
     dataChange(event: any): void;
+    /**
+     * on data chamge
+     * @param event new json
+     */
+    gridDataChange(event: any): void;
     /**
      * using on side nav open
      * @param event json

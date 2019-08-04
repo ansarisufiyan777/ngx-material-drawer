@@ -1,21 +1,33 @@
 {
   "name": "ngx-material-drawer",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "author": "Sufiyan Ansari",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0",
-    "@angular/cdk": "^7.2.0",
-    "@angular/animations": "^7.0.4",
-    "@angular/flex-layout": "^7.0.0-beta.22",
-    "@angular/material": "^7.2.0",
-    "rxjs": "~6.3.3"
+    "@angular/common": "~8.2.0",
+    "@angular/core": "~8.2.0",
+    "@angular/cdk": "^8.1.2",
+    "@angular/animations": "^8.2.0",
+    "@angular/flex-layout": "^8.0.0-beta.26",
+    "@angular/material": "^8.1.2",
+    "rxjs": "~6.5.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ansarisufiyan777/ngx-material-drawer"
   },
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "material",
+    "drawer",
+    "dynamic",
+    "dashboard",
+    "tile",
+    "configurable",
+    "json"
+  ],
   "main": "bundles/ngx-material-drawer.umd.js",
   "module": "fesm5/ngx-material-drawer.js",
   "es2015": "fesm2015/ngx-material-drawer.js",

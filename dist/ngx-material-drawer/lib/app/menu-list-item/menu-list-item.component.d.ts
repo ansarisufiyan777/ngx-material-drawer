@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { NgxNavService } from '../utils/nav.service';
-import { MatMenu } from '@angular/material';
+import { MatMenu } from '@angular/material/menu';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 export declare class NgxMenuListItemComponent implements OnInit {
     navService: NgxNavService;

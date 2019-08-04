@@ -1,7 +1,7 @@
 import { Component, HostBinding, Input, OnInit, ViewChild } from '@angular/core';
 import { NgxNavService } from '../utils/nav.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { MatMenu } from '@angular/material';
+import { MatMenu } from '@angular/material/menu';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 
 @Component({
@@ -13,7 +13,7 @@ import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.servic
 export class NgxMenuListItemComponent implements OnInit {
   expanded: boolean;
   @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
-  @ViewChild('childMenu') public childMenu;
+  @ViewChild('childMenu',{static: true}) public childMenu:any;
   @Input() menus: any;
   @Input() depth: number;
   @Input() matMenu: MatMenu;

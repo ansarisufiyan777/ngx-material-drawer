@@ -3,6 +3,6 @@
 .container {
   padding: 8px 24px 108px 24px;
 }
-/deep/ div.jsoneditor{
+::ng-deep div.jsoneditor{
   height: 600px !important;
 }

@@ -1,6 +1,6 @@
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
@@ -81,7 +81,7 @@ var NgxNavService = /** @class */ (function () {
     NgxNavService.ctorParameters = function () { return [
         { type: NgxMaterialDrawerEventEmitter }
     ]; };
-    /** @nocollapse */ NgxNavService.ngInjectableDef = i0.defineInjectable({ factory: function NgxNavService_Factory() { return new NgxNavService(i0.inject(i1.NgxMaterialDrawerEventEmitter)); }, token: NgxNavService, providedIn: "root" });
+    /** @nocollapse */ NgxNavService.ngInjectableDef = i0.ɵɵdefineInjectable({ factory: function NgxNavService_Factory() { return new NgxNavService(i0.ɵɵinject(i1.NgxMaterialDrawerEventEmitter)); }, token: NgxNavService, providedIn: "root" });
     return NgxNavService;
 }());
 export { NgxNavService };

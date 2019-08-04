@@ -26,7 +26,7 @@ export declare class NgxMaterialDrawerComponent implements AfterViewInit, OnInit
     onFabCollapsed: any;
     onMainFabButtonClick: any;
     onFabButtonClick: any;
-    version: import("@angular/core/src/version").Version;
+    version: import("@angular/core").Version;
     constructor(navService: NgxNavService, matEventEmitterService: NgxMaterialDrawerEventEmitter);
     ngOnInit(): void;
     ngAfterViewInit(): void;

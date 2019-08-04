@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef, ViewEncapsulation, AfterViewInit, Input, Output, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { JsonEditorComponent } from 'ang-jsoneditor';
 import { EditorComponent } from './json-editor/json-editor.component';
 import { NgxMaterialDrawerEventEmitter } from 'projects/ngx-material-drawer/src/public_api';

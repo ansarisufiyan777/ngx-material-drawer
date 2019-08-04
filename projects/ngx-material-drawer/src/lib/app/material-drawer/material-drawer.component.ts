@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef, AfterViewInit, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { VERSION } from '@angular/material';
+import { VERSION } from '@angular/material/core';
 import { NgxNavService } from '../utils/nav.service';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 @Component({
@@ -8,7 +8,7 @@ import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.servic
   styleUrls: ['./material-drawer.component.scss']
 })
 export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
-  @ViewChild('appDrawer') appDrawer: ElementRef;
+  @ViewChild('appDrawer',{static: false}) appDrawer: ElementRef;
 
 
   @Input('data') navData: any;
