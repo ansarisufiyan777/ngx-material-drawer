@@ -14,7 +14,7 @@ export class EditorComponent implements OnInit {
   @ViewChild(JsonEditorComponent) editor: JsonEditorComponent;
   public editorOptions: JsonEditorOptions;
   public data: any;
-  private fg: FormGroup;
+  public fg: FormGroup;
 
   constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter, private formBuilder: FormBuilder, public dialogRef: MatDialogRef<EditorComponent>,
     @Inject(MAT_DIALOG_DATA) data: any) {
