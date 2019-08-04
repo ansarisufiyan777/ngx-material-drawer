@@ -1,7 +1,7 @@
 import { Component, HostBinding, Input, OnInit, ViewChild } from '@angular/core';
 import { NgxNavService } from '../utils/nav.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { MatMenu } from '@angular/material';
+import { MatMenu } from '@angular/material/menu';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 
 @Component({
