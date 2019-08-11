@@ -1,7 +1,10 @@
+
 ## AngularMaterialDrawer [![npm][npm_img]][npm_url]
 
 [npm_img]: https://img.shields.io/npm/v/ngx-material-drawer.svg?colorB=0E7FBF
 [npm_url]: https://www.npmjs.com/package/ngx-material-drawer
+
+# <center> [Demo](https://ansarisufiyan777.github.io/ngx-material-drawer/) | [Playground](https://stackblitz.com/edit/ngx-material-drawer) </center>
 
 > Does your application **contain a Drawer, Toolbar, Global search, Fab Buttons**? Do you want to have it
 > **up and running in less than 5 minutes**? Do you want your drawer to follow the **Angular Material Design Guidelines**? Do you have
@@ -16,7 +19,7 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
 -   **the easiest possible integration**
 -   integrate in less than  **5 minutes**
 -   depends on Material Library and SASS
--   compatible down to  **Material 7.0.0**
+-   compatible down to  **Material 8.0.0**
 -   includes an  **Heirarchical Toolbar Menu and Navigation Menu**
 -   quick and simple JSON structure
 -   follows the  **Angular Material Design Guidelines**
@@ -30,6 +33,9 @@ If any (or all) of these questions seem familiar, the  **NgxMaterialDrawer**  is
 -   expandable items
 -   define custom drawer items
 -   tested and  **stable**
+-   Dynamic tiles based on the **JSON**
+- Break point for **responsiveness**
+- Define resolution specific JSON 
 -   **absolutely NO limits**
 
 # Preview
