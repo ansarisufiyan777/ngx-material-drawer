@@ -3,33 +3,47 @@
     #childMenu="matMenu"
     [overlapTrigger]="false"
 >
-    <span *ngFor="let child of menus">
+    <span *ngFor="let item of menus">
         <!-- Handle branch node menu items -->
-        <span *ngIf="child.children && child.children.length > 0">
-            <button
-                [ngStyle]="child.style? child.style : ''"
-                mat-menu-item
-                color="primary"
-                [matMenuTriggerFor]="menu.childMenu"
-            >
-                <mat-icon>{{child.iconName}}</mat-icon>
-                <span>{{child.displayName}}</span>
-            </button>
+        <span *ngIf="item.children && item.children.length > 0">
+            <!-- <ng-container *ngIf="item.component; else elseBlock">
+                <lib-card-holder
+                    [matMenuTriggerFor]="menu.childMenu"
+                    mat-menu-item
+                    [cardData]="ngxUtilsService.getExtendedData(item.component)"
+                ></lib-card-holder>
+            </ng-container> -->
+            <ng-template #elseBlock>
+                <button
+                    [ngStyle]="item.style? item.style : ''"
+                    mat-menu-item
+                    color="primary"
+                    [matMenuTriggerFor]="menu.childMenu"
+                >
+                    <mat-icon>{{item.iconName}}</mat-icon>
+                    <span>{{item.displayName}}</span>
+                </button>
+            </ng-template>
             <lib-menu-list-item
                 #menu
-                [menus]="child.children"
+                [menus]="item.children"
             ></lib-menu-list-item>
         </span>
         <!-- Handle leaf node menu items -->
-        <span *ngIf="!child.children || child.children.length === 0">
-            <button
-                [ngStyle]="child.style? child.style : ''"
-                mat-menu-item
-                (click)="onItemSelected(child)"
-            >
-                <mat-icon>{{child.iconName}}</mat-icon>
-                <span>{{child.displayName}}</span>
-            </button>
+        <span *ngIf="!item.children || item.children.length === 0">
+            <!-- <ng-container *ngIf="item.component; else elseBlock">
+                <lib-card-holder mat-menu-item [cardData]="ngxUtilsService.getExtendedData(item.component)"></lib-card-holder>
+            </ng-container> -->
+            <ng-template #elseBlock>
+                <button
+                    [ngStyle]="item.style? item.style : ''"
+                    mat-menu-item
+                    (click)="onItemSelected(item)"
+                >
+                    <mat-icon>{{item.iconName}}</mat-icon>
+                    <span>{{item.displayName}}</span>
+                </button>
+            </ng-template>
         </span>
     </span>
 </mat-menu>

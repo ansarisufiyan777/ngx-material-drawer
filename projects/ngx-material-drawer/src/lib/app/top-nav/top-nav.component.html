@@ -21,9 +21,16 @@
                 <div class="line-menu half end"></div>
             </div>
             <ng-container *ngIf="config?.toggleIcon">
-                <mat-icon>{{!isDrawerOpened ? config.toggleIcon : config?.closedToggleIcon ? config?.closedToggleIcon : 'close'}}</mat-icon>
+                <mat-icon>
+                    {{!isDrawerOpened ? config.toggleIcon : config?.closedToggleIcon ? config?.closedToggleIcon : 'close'}}
+                </mat-icon>
             </ng-container>
-            
+
+
+
+
+
+
         </button>
         <span>
             {{config?.appName ? config.appName : 'Default name'}}
@@ -46,25 +53,33 @@
                 <span *ngFor="let item of config?.rightMenus?.data">
                     <!-- Handle branch node buttons here -->
                     <span *ngIf="item.children && item.children.length > 0">
-                        <button
-                            *ngIf="item.displayName?.trim()"
-                            [ngStyle]="item?.style? item.style : ''"
-                            mat-button
-                            [matMenuTriggerFor]="menu.childMenu"
-                            [disabled]="item.disabled"
-                        >
-                            <mat-icon>{{item.iconName}}</mat-icon>
-                            <span>{{item.displayName}}</span>
-                        </button>
-                        <button
-                            *ngIf="!item?.displayName?.trim()"
-                            [ngStyle]="item?.style? item.style : ''"
-                            mat-icon-button
-                            [matMenuTriggerFor]="menu.childMenu"
-                            [disabled]="item.disabled"
-                        >
-                            <mat-icon>{{item.iconName}}</mat-icon>
-                        </button>
+                        <ng-container *ngIf="item.component; else elseBlock">
+                            <lib-card-holder
+                                [matMenuTriggerFor]="menu.childMenu"
+                                [cardData]="ngxUtilsService.getExtendedData(item.component)"
+                            ></lib-card-holder>
+                        </ng-container>
+                        <ng-template #elseBlock>
+                            <button
+                                *ngIf="item.displayName?.trim()"
+                                [ngStyle]="item?.style? item.style : ''"
+                                mat-button
+                                [matMenuTriggerFor]="menu.childMenu"
+                                [disabled]="item.disabled"
+                            >
+                                <mat-icon>{{item.iconName}}</mat-icon>
+                                <span>{{item.displayName}}</span>
+                            </button>
+                            <button
+                                *ngIf="!item?.displayName?.trim()"
+                                [ngStyle]="item?.style? item.style : ''"
+                                mat-icon-button
+                                [matMenuTriggerFor]="menu.childMenu"
+                                [disabled]="item.disabled"
+                            >
+                                <mat-icon>{{item.iconName}}</mat-icon>
+                            </button>
+                        </ng-template>
                         <lib-menu-list-item
                             #menu
                             [menus]="item.children"
@@ -72,28 +87,41 @@
                     </span>
                     <!-- Leaf node buttons here -->
                     <span *ngIf="!item.children || item.children.length === 0">
-                        <button
-                            *ngIf="item.displayName?.trim()"
-                            [ngStyle]="item?.style? item.style : ''"
-                            mat-button
-                            (click)="onItemSelected(item)"
-                            [disabled]="item.disabled"
-                        >
-                            <mat-icon>{{item.iconName}}</mat-icon>
-                            <span>{{item.displayName}}</span>
-                        </button>
-                        <button
-                            *ngIf="!item?.displayName?.trim()"
-                            [ngStyle]="item?.style? item.style : ''"
-                            mat-icon-button
-                            (click)="onItemSelected(item)"
-                            [disabled]="item.disabled"
-                        >
-                            <mat-icon>{{item.iconName}}</mat-icon>
-                        </button>
+                        <ng-container *ngIf="item.component; else elseBlock">
+                            <lib-card-holder [cardData]="ngxUtilsService.getExtendedData(item.component)"></lib-card-holder>
+                        </ng-container>
+                        <ng-template #elseBlock>
+                            <button
+                                *ngIf="item.displayName?.trim()"
+                                [ngStyle]="item?.style? item.style : ''"
+                                mat-button
+                                (click)="onItemSelected(item)"
+                                [disabled]="item.disabled"
+                            >
+                                <mat-icon>{{item.iconName}}</mat-icon>
+                                <span>{{item.displayName}}</span>
+                            </button>
+                            <button
+                                *ngIf="!item?.displayName?.trim()"
+                                [ngStyle]="item?.style? item.style : ''"
+                                mat-icon-button
+                                (click)="onItemSelected(item)"
+                                [disabled]="item.disabled"
+                            >
+                                <mat-icon>{{item.iconName}}</mat-icon>
+                            </button>
+                        </ng-template>
+
+
+
                     </span>
                 </span>
             </ng-container>
+
+
+
+
+
 
 
 

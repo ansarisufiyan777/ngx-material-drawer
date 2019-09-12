@@ -16,7 +16,9 @@ export class EditorComponent implements OnInit {
   public data: any;
   public fg: FormGroup;
 
-  constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter, private formBuilder: FormBuilder, public dialogRef: MatDialogRef<EditorComponent>,
+  constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter, 
+    private formBuilder: FormBuilder, 
+    public dialogRef: MatDialogRef<EditorComponent>,
     @Inject(MAT_DIALOG_DATA) data: any) {
     this.editorOptions = new JsonEditorOptions()
     this.editorOptions.modes = ['tree']; // set all allowed modes

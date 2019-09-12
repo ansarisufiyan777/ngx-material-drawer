@@ -34,9 +34,10 @@
     }
 }
 
-.menu-list-item.mat-list-item {
+::ng-deep .menu-list-item.mat-list-item {
     .mat-list-item-content {
         flex: 1 1 100%;
+        width: 100%;
     }
 }
 

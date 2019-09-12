@@ -2,6 +2,7 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { NgxNavService } from '../utils/nav.service';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
 import { trigger, style, animate, transition } from '@angular/animations';
+import { NgxUtilsService } from '../utils/utils.service';
 
 
 @Component({
@@ -24,9 +25,11 @@ import { trigger, style, animate, transition } from '@angular/animations';
   ],
 })
 export class NgxTopNavComponent implements OnInit {
-  @ViewChild("ngxSearchBox",{static: false}) ngxSearchBox: ElementRef;
+  @ViewChild("ngxSearchBox", { static: false }) ngxSearchBox: ElementRef;
   @Input() config: any;
-  constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter, public navService: NgxNavService) { }
+  constructor(public matEventEmitterService: NgxMaterialDrawerEventEmitter,
+    public navService: NgxNavService, 
+    public ngxUtilsService: NgxUtilsService) { }
   public isDrawerOpened;
   public isSearchActive: boolean;
   public searchValue: string = "";
@@ -58,9 +61,9 @@ export class NgxTopNavComponent implements OnInit {
       value: this.searchValue,
       inputRef: this.ngxSearchBox
     }
-    if(this.isSearchActive){
+    if (this.isSearchActive) {
       this.matEventEmitterService.serachInputOpen(searchObject)
-    }else{
+    } else {
       this.matEventEmitterService.serachInputClosed(searchObject)
 
     }

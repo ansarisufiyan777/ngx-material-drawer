@@ -16,7 +16,6 @@ import { NgxGridComponent } from './grid/grid.component';
 import { CardHolderComponent } from './card-holder/card-holder.component';
 import { CardDirective } from './directive/card.directive';
 
-
 @NgModule({
   imports: [
     BrowserModule,
