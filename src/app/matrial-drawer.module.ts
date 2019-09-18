@@ -13,6 +13,7 @@ import { RedCardComponent } from './cards/red-card/red-card.component';
 import { GreenCardComponent } from './cards/green-card/green-card.component';
 import { GridContainerComponent } from './cards/grid-container/grid-container.component';
 import { MaterialModule } from './material.module';
+import { SwitchComponent } from './switch/switch.component';
 
 
 @NgModule({
@@ -33,14 +34,16 @@ import { MaterialModule } from './material.module';
     BlueCardComponent,
     RedCardComponent,
     GreenCardComponent,
-    GridContainerComponent
+    GridContainerComponent,
+    SwitchComponent
   ],
   // Dynamic components
   entryComponents:[ 
     BlueCardComponent,
     RedCardComponent,
     GreenCardComponent,
-    EditorComponent
+    EditorComponent,
+    SwitchComponent
   ],
   bootstrap: [AppComponent] 
 })

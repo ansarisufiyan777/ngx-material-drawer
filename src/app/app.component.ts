@@ -6,6 +6,7 @@ import { NgxMaterialDrawerEventEmitter } from 'projects/ngx-material-drawer/src/
 import { BlueCardComponent } from './cards/blue-card/blue-card.component';
 import { RedCardComponent } from './cards/red-card/red-card.component';
 import { GreenCardComponent } from './cards/green-card/green-card.component';
+import { SwitchComponent } from './switch/switch.component';
 let content = require('../drawer-config.json');
 
 @Component({
@@ -26,6 +27,7 @@ export class AppComponent implements OnInit {
     'c10': { component: BlueCardComponent },
     'c11': { component: RedCardComponent },
     'c12': { component: GreenCardComponent },
+    'switch': { component: SwitchComponent },
   }
   constructor(public dialog: MatDialog, public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
   }

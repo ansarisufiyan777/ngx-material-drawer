@@ -6,14 +6,7 @@
     <span *ngFor="let item of menus">
         <!-- Handle branch node menu items -->
         <span *ngIf="item.children && item.children.length > 0">
-            <!-- <ng-container *ngIf="item.component; else elseBlock">
-                <lib-card-holder
-                    [matMenuTriggerFor]="menu.childMenu"
-                    mat-menu-item
-                    [cardData]="ngxUtilsService.getExtendedData(item.component)"
-                ></lib-card-holder>
-            </ng-container> -->
-            <ng-template #elseBlock>
+
                 <button
                     [ngStyle]="item.style? item.style : ''"
                     mat-menu-item
@@ -23,7 +16,6 @@
                     <mat-icon>{{item.iconName}}</mat-icon>
                     <span>{{item.displayName}}</span>
                 </button>
-            </ng-template>
             <lib-menu-list-item
                 #menu
                 [menus]="item.children"
@@ -31,10 +23,6 @@
         </span>
         <!-- Handle leaf node menu items -->
         <span *ngIf="!item.children || item.children.length === 0">
-            <!-- <ng-container *ngIf="item.component; else elseBlock">
-                <lib-card-holder mat-menu-item [cardData]="ngxUtilsService.getExtendedData(item.component)"></lib-card-holder>
-            </ng-container> -->
-            <ng-template #elseBlock>
                 <button
                     [ngStyle]="item.style? item.style : ''"
                     mat-menu-item
@@ -43,7 +31,6 @@
                     <mat-icon>{{item.iconName}}</mat-icon>
                     <span>{{item.displayName}}</span>
                 </button>
-            </ng-template>
         </span>
     </span>
 </mat-menu>

@@ -80,6 +80,13 @@
         ]
       },
       {
+        "displayName": "Switch",
+        "iconName": "switch",
+        "component": {
+          "component": "switch"
+        }
+      },
+      {
         "displayName": "Demo",
         "iconName": "more_vert",
         "route": "devfestfl",
