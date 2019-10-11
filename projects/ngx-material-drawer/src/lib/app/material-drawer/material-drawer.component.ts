@@ -2,16 +2,18 @@ import { Component, ViewChild, ElementRef, AfterViewInit, EventEmitter, Input, O
 import { VERSION } from '@angular/material/core';
 import { NgxNavService } from '../utils/nav.service';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
+import { NgxUtilsService } from '../utils/utils.service';
 @Component({
   selector: 'ngx-material-drawer',
   templateUrl: './material-drawer.component.html',
   styleUrls: ['./material-drawer.component.scss']
 })
 export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
-  @ViewChild('appDrawer',{static: false}) appDrawer: ElementRef;
+  @ViewChild('appDrawer', { static: false }) appDrawer: ElementRef;
 
 
   @Input('data') navData: any;
+  @Input('componentInstance') componentInstance: any;
 
   @Output() public onMatDrawerInit: any = new EventEmitter();
   @Output() public onMatDrawerAfterViewInit: any = new EventEmitter();
@@ -39,11 +41,12 @@ export class NgxMaterialDrawerComponent implements AfterViewInit, OnInit {
   public version = VERSION;
 
   constructor(public navService: NgxNavService,
-    public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
+    public matEventEmitterService: NgxMaterialDrawerEventEmitter, public ngxUtilsService: NgxUtilsService) {
     this.subscribeToEventEmitter();
   }
 
   public ngOnInit() {
+    this.ngxUtilsService.componentInstance = this.componentInstance;
     this.matEventEmitterService.dataChange(this.navData);
     this.matEventEmitterService.onDataChange.subscribe(res => {
       this.navData = res;

@@ -80,6 +80,13 @@
         ]
       },
       {
+        "displayName": "Switch",
+        "iconName": "switch",
+        "component": {
+          "component": "switch"
+        }
+      },
+      {
         "displayName": "Demo",
         "iconName": "more_vert",
         "route": "devfestfl",
@@ -191,6 +198,9 @@
             "displayName": "Speakers",
             "iconName": "group",
             "route": "devfestfl/speakers",
+            "component": {
+              "component": "c7"
+            },
             "children": [
               {
                 "displayName": "Michael Prentice",
@@ -200,7 +210,13 @@
                   {
                     "displayName": "Create Enterprise UIs",
                     "iconName": "star_rate",
-                    "route": "devfestfl/speakers/michael-prentice/material-design"
+                    "route": "devfestfl/speakers/michael-prentice/material-design",
+                    "component": {
+                      "component": "c8",
+                      "data": {
+                        "text": "C8 component drawer"
+                      }
+                    }
                   }
                 ]
               },

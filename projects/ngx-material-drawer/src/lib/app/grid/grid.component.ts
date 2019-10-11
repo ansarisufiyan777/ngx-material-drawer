@@ -2,6 +2,7 @@ import { Component, Input, OnInit, ViewChild, ComponentFactoryResolver, OnDestro
 import { BreakpointObserverService, POINTS_NAME } from '../utils/breakpoint-observer.service';
 import { Observable } from 'rxjs';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
+import { NgxUtilsService } from '../utils/utils.service';
 
 @Component({
   selector: 'ngx-material-grid',
@@ -15,10 +16,12 @@ export class NgxGridComponent implements OnInit {
   public gridData;
   public size;
   public size$: Observable<string>;
-  constructor(private _breakpointObserverService: BreakpointObserverService, public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
+  constructor(private _breakpointObserverService: BreakpointObserverService, 
+    public matEventEmitterService: NgxMaterialDrawerEventEmitter, 
+    public ngxUtilsService: NgxUtilsService) {
     this.matEventEmitterService.onGridDataChange.subscribe((event) => {
       if (event) {
-        this.refreshGrid(event['grids'],this.size)
+        this.refreshGrid(event['grids'], this.size)
       } else if (this.inputData['grid']) {
         this.gridData = this.inputData.grid;
       }
@@ -33,6 +36,7 @@ export class NgxGridComponent implements OnInit {
         this.gridData = this.inputData.grid;
       }
     }
+    this.ngxUtilsService.componentInstance = this.componentInstance;
   }
 
   registerBreakPoints(grids) {
@@ -60,12 +64,6 @@ export class NgxGridComponent implements OnInit {
       }
       this.gridData = gData || [];
     }
-  }
-
-  getExtendedData(card: any) {
-    let compDetail = this.componentInstance[card.component];
-    let detail = { ...card, ...compDetail };
-    return detail;
   }
 
 }

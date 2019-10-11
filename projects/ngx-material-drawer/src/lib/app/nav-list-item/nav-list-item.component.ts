@@ -2,6 +2,7 @@ import { Component, HostBinding, Input, OnInit, AfterViewInit, Output, EventEmit
 import { NgxNavService } from '../utils/nav.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
+import { NgxUtilsService } from '../utils/utils.service';
 
 @Component({
   selector: 'lib-nav-list-item',
@@ -24,7 +25,7 @@ export class NgxNavListItemComponent implements OnInit {
   @Input() item: any;
   @Input() depth: number;  
   constructor(public navService: NgxNavService,
-    public matEventEmitterService:NgxMaterialDrawerEventEmitter) {
+    public matEventEmitterService:NgxMaterialDrawerEventEmitter,public ngxUtilsService:NgxUtilsService) {
     if (this.depth === undefined) {
       this.depth = 0;
     }

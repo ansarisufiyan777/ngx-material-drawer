@@ -3,6 +3,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { JsonEditorComponent } from 'ang-jsoneditor';
 import { EditorComponent } from './json-editor/json-editor.component';
 import { NgxMaterialDrawerEventEmitter } from 'projects/ngx-material-drawer/src/public_api';
+import { BlueCardComponent } from './cards/blue-card/blue-card.component';
+import { RedCardComponent } from './cards/red-card/red-card.component';
+import { GreenCardComponent } from './cards/green-card/green-card.component';
+import { SwitchComponent } from './switch/switch.component';
 let content = require('../drawer-config.json');
 
 @Component({
@@ -12,7 +16,19 @@ let content = require('../drawer-config.json');
 })
 export class AppComponent implements OnInit {
   public jsonData: any;
-
+  public componentInstance = {
+    'c7': {
+      component: BlueCardComponent, data: {
+        text: "C7 component drawer"
+      }
+    },
+    'c8': { component: RedCardComponent },
+    'c9': { component: GreenCardComponent },
+    'c10': { component: BlueCardComponent },
+    'c11': { component: RedCardComponent },
+    'c12': { component: GreenCardComponent },
+    'switch': { component: SwitchComponent },
+  }
   constructor(public dialog: MatDialog, public matEventEmitterService: NgxMaterialDrawerEventEmitter) {
   }
 

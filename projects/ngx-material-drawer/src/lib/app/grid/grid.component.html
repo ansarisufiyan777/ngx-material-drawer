@@ -9,7 +9,7 @@
             [colspan]="card.cols"
             [rowspan]="card.rows"
         >
-            <lib-card-holder [cardData]='getExtendedData(card)'></lib-card-holder>
+            <lib-card-holder [cardData]='ngxUtilsService.getExtendedData(card)'></lib-card-holder>
         </mat-grid-tile>
     </mat-grid-list>
 </div>

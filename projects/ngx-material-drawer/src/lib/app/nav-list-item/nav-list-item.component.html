@@ -1,19 +1,27 @@
 <a
     mat-list-item
-    [style.padding-left]="(depth * 12) + 'px'"
+    [style.padding-left]="(depth * 5) + 'px'"
     [ngStyle]="item.style? item.style : ''"
     (click)="onItemSelected(item)"
     class="menu-list-item"
 >
-    <mat-icon class="routeIcon">{{item.iconName}}</mat-icon>
-    <span>{{item.displayName}}</span>
-    <span
-        fxFlex
-        *ngIf="item.children && item.children.length"
-    >
-        <span fxFlex></span>
-        <mat-icon [@indicatorRotate]="expanded ? 'expanded': 'collapsed'">expand_more</mat-icon>
-    </span>
+    <ng-container *ngIf="item.component; else elseBlock">
+        <lib-card-holder [cardData]="ngxUtilsService.getExtendedData(item.component)"></lib-card-holder>
+    </ng-container>
+    <ng-template #elseBlock>
+        <mat-icon class="routeIcon">{{item.iconName}}</mat-icon>
+        <span>{{item.displayName}}</span>
+        <span
+            fxFlex
+            *ngIf="item.children && item.children.length"
+        >
+            <span fxFlex></span>
+            <mat-icon [@indicatorRotate]="expanded ? 'expanded': 'collapsed'">expand_more</mat-icon>
+        </span>
+    </ng-template>
+
+
+
 </a>
 <div *ngIf="expanded">
     <lib-nav-list-item
