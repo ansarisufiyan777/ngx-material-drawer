@@ -28,11 +28,11 @@ export class GridContainerComponent implements OnInit {
       xl: {
         grid: [
           { cols: 6, rows: 1, component: 'c1' },
-          // { cols: 6, rows: 1, component: 'c2' },
-          // { cols: 12, rows: 2, component: 'c3' },
-          // { cols: 4, rows: 1, component: 'c4' },
-          // { cols: 4, rows: 1, component: 'c5' },
-          // { cols: 4, rows: 1, component: 'c6' },
+          { cols: 6, rows: 1, component: 'c2' },
+          { cols: 12, rows: 2, component: 'c3' },
+          { cols: 4, rows: 1, component: 'c4' },
+          { cols: 4, rows: 1, component: 'c5' },
+          { cols: 4, rows: 1, component: 'c6' },
         ]
       },
       sm: {
