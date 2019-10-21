@@ -1,3 +1,13 @@
-<div style="background-color: lightblue;height: 100%;">
-    <div style="font-size: 22px">{{data?.text}}</div>
+<div style="background-color: rgb(255, 255, 255);height: 100%;">
+    <canvas
+        baseChart
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [colors]="lineChartColors"
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+        [plugins]="lineChartPlugins"
+    >
+    </canvas>
 </div>

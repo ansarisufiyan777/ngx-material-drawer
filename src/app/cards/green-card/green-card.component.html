@@ -1,3 +1,11 @@
-<div style="background-color: lightgreen;height: 100%">
-    <div style="font-size: 22px">{{data?.text}}</div>
+<div style="background-color: white;height: 100%">
+    <canvas
+        baseChart
+        [datasets]="bubbleChartData"
+        [options]="bubbleChartOptions"
+        [colors]="bubbleChartColors"
+        [legend]="bubbleChartLegend"
+        [chartType]="bubbleChartType"
+    >
+    </canvas>
 </div>
