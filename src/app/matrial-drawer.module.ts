@@ -14,6 +14,7 @@ import { GreenCardComponent } from './cards/green-card/green-card.component';
 import { GridContainerComponent } from './cards/grid-container/grid-container.component';
 import { MaterialModule } from './material.module';
 import { SwitchComponent } from './switch/switch.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SwitchComponent } from './switch/switch.component';
     FlexLayoutModule,
     NgJsonEditorModule,
     NgxMaterialDrawerModule,
-    MaterialModule
+    MaterialModule,
+    ChartsModule
   ],
   declarations: [
     AppComponent,
