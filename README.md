@@ -1,5 +1,5 @@
 
-## AngularMaterialDrawer [![npm][npm_img]][npm_url]
+## AngularMaterialDrawer [![npm][npm_img]][npm_url] [![Netlify Status](https://api.netlify.com/api/v1/badges/b415910b-a940-49b8-a4ef-0700fe07fc8a/deploy-status)](https://ngx-material-drawer.netlify.com)
 
 [npm_img]: https://img.shields.io/npm/v/ngx-material-drawer.svg?colorB=0E7FBF
 [npm_url]: https://www.npmjs.com/package/ngx-material-drawer
