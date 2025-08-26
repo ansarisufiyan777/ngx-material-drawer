@@ -1,26 +1,34 @@
-import { Component, HostBinding, Input, OnInit, ViewChild } from '@angular/core';
-import { NgxNavService } from '../utils/nav.service';
-import { animate, state, style, transition, trigger } from '@angular/animations';
-import { MatMenu } from '@angular/material/menu';
-import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
-import { NgxUtilsService } from '../utils/utils.service';
+import {
+  Component,
+  HostBinding,
+  Input,
+  OnInit,
+  ViewChild,
+} from "@angular/core";
+import { MatMenu } from "@angular/material/menu";
+import { NgxMaterialDrawerEventEmitter } from "../utils/mat-event-emitter.service";
+import { NgxNavService } from "../utils/nav.service";
+import { NgxUtilsService } from "../utils/utils.service";
 
 @Component({
-  selector: 'lib-menu-list-item',
-  templateUrl: './menu-list-item.component.html',
-  styleUrls: ['./menu-list-item.component.scss'],
-  exportAs: 'menuInMenuListItemComponent'
+  selector: "lib-menu-list-item",
+  templateUrl: "./menu-list-item.component.html",
+  styleUrls: ["./menu-list-item.component.scss"],
+  exportAs: "menuInMenuListItemComponent",
 })
 export class NgxMenuListItemComponent implements OnInit {
-  expanded: boolean;
-  @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
-  @ViewChild('childMenu', { static: true }) public childMenu: any;
+  expanded: boolean = false;
+  @HostBinding("attr.aria-expanded") ariaExpanded = this.expanded;
+  @ViewChild("childMenu", { static: true }) public childMenu: any;
   @Input() menus: any;
-  @Input() depth: number;
-  @Input() matMenu: MatMenu;
-  constructor(public navService: NgxNavService,
+  @Input() depth: number = 0;
+  @Input() matMenu!: MatMenu;
+
+  constructor(
+    public navService: NgxNavService,
     public matEventEmitterService: NgxMaterialDrawerEventEmitter,
-    public ngxUtilsService: NgxUtilsService) {
+    public ngxUtilsService: NgxUtilsService
+  ) {
     if (this.depth === undefined) {
       this.depth = 0;
     }
@@ -39,7 +47,6 @@ export class NgxMenuListItemComponent implements OnInit {
 
   onItemSelected(item: any) {
     if (!item.children || !item.children.length) {
-
       this.matEventEmitterService.menuItemClick(item);
     }
     if (item.children && item.children.length) {

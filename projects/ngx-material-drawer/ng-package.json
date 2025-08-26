@@ -3,5 +3,6 @@
   "dest": "../../dist/ngx-material-drawer",
   "lib": {
     "entryFile": "src/public_api.ts"
-  }
+  },
+  "assets": ["./src/lib/app/**/*.scss"]
 }

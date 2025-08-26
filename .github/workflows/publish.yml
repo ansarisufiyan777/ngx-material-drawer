@@ -1,0 +1,83 @@
+name: Publish to NPM
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger on version tags (e.g., v2.1.0, v2.2.0)
+  workflow_dispatch:  # Allow manual triggering
+    inputs:
+      version:
+        description: 'Version to publish (e.g., 2.1.0)'
+        required: true
+        type: string
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Needed for semantic versioning
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run tests
+        run: npm test -- --watch=false --browsers=ChromeHeadless
+      
+      - name: Run linting
+        run: npm run lint
+      
+      - name: Build library
+        run: npm run build:lib
+      
+      - name: Verify build output
+        run: |
+          echo "Checking build output..."
+          ls -la dist/ngx-material-drawer/
+          echo "Package.json contents:"
+          cat dist/ngx-material-drawer/package.json
+      
+      - name: Publish to NPM
+        run: |
+          cd dist/ngx-material-drawer
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
+      
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          body: |
+            ## What's Changed
+            
+            This release includes updates and improvements to the ngx-material-drawer library.
+            
+            ### Features
+            - Updated to Angular 17+
+            - Modern Material Design theming
+            - Enhanced TypeScript support
+            
+            ### Breaking Changes
+            - Requires Angular 17+
+            - Updated Material theming syntax
+            
+            ### Installation
+            ```bash
+            npm install ngx-material-drawer@${{ github.ref_name }}
+            ```
+          draft: false
+          prerelease: false

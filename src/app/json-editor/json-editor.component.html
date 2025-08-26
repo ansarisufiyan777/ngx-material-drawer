@@ -1,7 +1,12 @@
-<form  [formGroup]="fg">
-  <json-editor style="height: 700px;" [options]="editorOptions" formControlName="jsonEditorForm"></json-editor>
+<form [formGroup]="fg">
+  <textarea
+    style="height: 700px; width: 100%; font-family: monospace"
+    formControlName="jsonEditorForm"
+    placeholder="Enter JSON data here..."
+  >
+  </textarea>
 </form>
-  
-  <div mat-dialog-actions>
-    <button mat-button (click)="onCloseClick()">Change Data</button>
-  </div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCloseClick()">Change Data</button>
+</div>

@@ -1,25 +1,36 @@
-import { Component, Input, OnInit, ViewChild, ComponentFactoryResolver, OnDestroy } from '@angular/core';
-import { CardDirective } from '../directive/card.directive';
-import { INgxCard } from '../interface';
+import {
+  Component,
+  Input,
+  OnInit,
+  ViewChild,
+  ComponentFactoryResolver,
+  OnDestroy,
+} from "@angular/core";
+import { CardDirective } from "../directive/card.directive";
+import { INgxCard } from "../interface";
 
 @Component({
-  selector: 'lib-card-holder',
-  templateUrl: './card-holder.component.html',
-  styleUrls: ['./card-holder.component.scss']
+  selector: "lib-card-holder",
+  templateUrl: "./card-holder.component.html",
+  styleUrls: ["./card-holder.component.scss"],
 })
 export class CardHolderComponent implements OnInit {
-  @Input() cardData;
-  @ViewChild(CardDirective,{static: true}) cardHost: CardDirective;
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+  @Input() cardData: any;
+  @ViewChild(CardDirective, { static: true }) cardHost!: CardDirective;
+
+  constructor(private componentFactoryResolver: ComponentFactoryResolver) {}
 
   ngOnInit() {
-    this.cardHost && this.cardData && this.loadComponent()
+    this.cardHost && this.cardData && this.loadComponent();
+  }
 
-  }
-  ngAfterViewInit() {
-  }
+  ngAfterViewInit() {}
+
   loadComponent() {
-    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(this.cardData.component);
+    const componentFactory =
+      this.componentFactoryResolver.resolveComponentFactory(
+        this.cardData.component
+      );
 
     const viewContainerRef = this.cardHost.viewContainerRef;
     viewContainerRef.clear();

@@ -1,3 +1,3 @@
-export interface INgxCard{
-    data
+export interface INgxCard {
+  data: any;
 }

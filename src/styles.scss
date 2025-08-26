@@ -1,12 +1,26 @@
-@import "~jsoneditor/dist/jsoneditor.min.css";
+@use '@angular/material' as mat;
+
+@import "jsoneditor/dist/jsoneditor.min.css";
 @import "../projects/ngx-material-drawer/src/lib/app/scss/styles.scss";
 
 /**********************Theme**********************/
-@import  '~@angular/material/theming';
-$app-primary: mat-palette($mat-indigo);
-$app-accent: mat-palette($mat-green);
-$app-warn: mat-palette($mat-red);
-$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker hue.
+$app-primary: mat.define-palette(mat.$indigo-palette);
+$app-accent: mat.define-palette(mat.$green-palette);
+
+// The warn palette is optional (defaults to red).
+$app-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat.define-light-theme((
+  color: (
+    primary: $app-primary,
+    accent: $app-accent,
+    warn: $app-warn,
+  )
+));
+
 /**********************break Points**********************/
 $handset: 360px;
 $large-handset: 480px;
@@ -16,30 +30,38 @@ $desktop: 960px;
 $large-desktop: 1280px;
 $x-large-desktop: 1440px;
 $xx-large-desktop: 1920px;
-@mixin  breakpoint($point) {
-@media (min-width: $point) { @content ; }
+
+@mixin breakpoint($point) {
+  @media (min-width: $point) { @content; }
 }
-@mixin  breakpoint-max($point) {
-@media (max-width: $point) { @content ; }
+
+@mixin breakpoint-max($point) {
+  @media (max-width: $point) { @content; }
 }
-@mixin  height-breakpoint($point) {
-@media (min-height: $point) { @content ; }
+
+@mixin height-breakpoint($point) {
+  @media (min-height: $point) { @content; }
 }
-@mixin  height-breakpoint-max($point) {
-@media (min-height: $point) { @content ; }
+
+@mixin height-breakpoint-max($point) {
+  @media (min-height: $point) { @content; }
 }
+
 /**********************Main CSS**********************/
-@include  mat-core();
-@include  angular-material-theme($app-theme);
+@include mat.core();
+@include mat.all-component-themes($app-theme);
+
 body {
-margin: 0;
-height: 100vh;
-font-family: Roboto, Arial, sans-serif;
-font-size: 16px;
-color: #292a1d;
+  margin: 0;
+  height: 100vh;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  color: #292a1d;
 }
+
 a {
-text-decoration-color: mat-color($app-primary);
-color: mat-color($app-primary);
+  text-decoration-color: mat.get-color-from-palette($app-primary);
+  color: mat.get-color-from-palette($app-primary);
 }
-@import  url( 'https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons');

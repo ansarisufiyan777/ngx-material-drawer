@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run linting
+        run: npm run lint
+      
+      - name: Run tests
+        run: npm test -- --watch=false --browsers=ChromeHeadless
+      
+      - name: Build library
+        run: npm run build:lib
+      
+      - name: Verify build output
+        run: |
+          echo "✅ Library built successfully!"
+          echo "📦 Build output:"
+          ls -la dist/ngx-material-drawer/
+          echo "📄 Package.json:"
+          cat dist/ngx-material-drawer/package.json | head -20

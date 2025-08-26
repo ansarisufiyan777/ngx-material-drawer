@@ -1,31 +1,49 @@
-import { Component, HostBinding, Input, OnInit, AfterViewInit, Output, EventEmitter } from '@angular/core';
-import { NgxNavService } from '../utils/nav.service';
-import { animate, state, style, transition, trigger } from '@angular/animations';
-import { NgxMaterialDrawerEventEmitter } from '../utils/mat-event-emitter.service';
-import { NgxUtilsService } from '../utils/utils.service';
+import {
+  Component,
+  HostBinding,
+  Input,
+  OnInit,
+  AfterViewInit,
+  Output,
+  EventEmitter,
+} from "@angular/core";
+import { NgxNavService } from "../utils/nav.service";
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from "@angular/animations";
+import { NgxMaterialDrawerEventEmitter } from "../utils/mat-event-emitter.service";
+import { NgxUtilsService } from "../utils/utils.service";
 
 @Component({
-  selector: 'lib-nav-list-item',
-  templateUrl: './nav-list-item.component.html',
-  styleUrls: ['./nav-list-item.component.scss'],
+  selector: "lib-nav-list-item",
+  templateUrl: "./nav-list-item.component.html",
+  styleUrls: ["./nav-list-item.component.scss"],
   animations: [
-    trigger('indicatorRotate', [
-      state('collapsed', style({ transform: 'rotate(0deg)' })),
-      state('expanded', style({ transform: 'rotate(180deg)' })),
-      transition('expanded <=> collapsed',
-        animate('225ms cubic-bezier(0.4,0.0,0.2,1)')
+    trigger("indicatorRotate", [
+      state("collapsed", style({ transform: "rotate(0deg)" })),
+      state("expanded", style({ transform: "rotate(180deg)" })),
+      transition(
+        "expanded <=> collapsed",
+        animate("225ms cubic-bezier(0.4,0.0,0.2,1)")
       ),
-    ])
-  ]
+    ]),
+  ],
 })
 export class NgxNavListItemComponent implements OnInit {
-
-  expanded: boolean;
-  @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
+  expanded: boolean = false;
+  @HostBinding("attr.aria-expanded") ariaExpanded = this.expanded;
   @Input() item: any;
-  @Input() depth: number;  
-  constructor(public navService: NgxNavService,
-    public matEventEmitterService:NgxMaterialDrawerEventEmitter,public ngxUtilsService:NgxUtilsService) {
+  @Input() depth: number = 0;
+
+  constructor(
+    public navService: NgxNavService,
+    public matEventEmitterService: NgxMaterialDrawerEventEmitter,
+    public ngxUtilsService: NgxUtilsService
+  ) {
     if (this.depth === undefined) {
       this.depth = 0;
     }

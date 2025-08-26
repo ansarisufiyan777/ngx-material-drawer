@@ -1,0 +1,1 @@
+{"ast":null,"code":"/*\n * Public API Surface of ngx-material-drawer\n */\nexport * from './lib/app/material-drawer/material-drawer.component';\nexport * from './lib/app/matrial-drawer.module';\nexport * from './lib/app/utils/mat-event-emitter.service';","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
