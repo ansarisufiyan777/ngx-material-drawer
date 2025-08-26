@@ -12,6 +12,11 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     
+    environment: main
+    
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -70,8 +75,6 @@ jobs:
         run: |
           cd dist/ngx-material-drawer
           npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
         working-directory: ./
       
       - name: Create Git tag
