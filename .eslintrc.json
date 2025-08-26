@@ -13,7 +13,9 @@
                 "src/**/*.ts"
             ],
             "parser": "@typescript-eslint/parser",
-            "plugins": ["@angular-eslint"],
+            "plugins": [
+                "@angular-eslint"
+            ],
             "extends": [
                 "eslint:recommended"
             ],
@@ -30,7 +32,9 @@
                 "projects/**/*.ts"
             ],
             "parser": "@typescript-eslint/parser",
-            "plugins": ["@angular-eslint"],
+            "plugins": [
+                "@angular-eslint"
+            ],
             "extends": [
                 "eslint:recommended"
             ],
@@ -46,11 +50,13 @@
             "files": [
                 "e2e/**/*.ts"
             ],
+            "parser": "@typescript-eslint/parser",
             "extends": [
                 "eslint:recommended"
             ],
             "rules": {
-                "no-undef": "off"
+                "no-undef": "off",
+                "no-unused-vars": "warn"
             }
         }
     ]
