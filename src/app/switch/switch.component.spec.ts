@@ -1,17 +1,19 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 
-import { SwitchComponent } from './switch.component';
+import { SwitchComponent } from "./switch.component";
 
-describe('SwitchComponent', () => {
+describe("SwitchComponent", () => {
   let component: SwitchComponent;
   let fixture: ComponentFixture<SwitchComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ SwitchComponent ]
-    })
-    .compileComponents();
-  }));
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [SwitchComponent],
+      imports: [MatSlideToggleModule, NoopAnimationsModule],
+    }).compileComponents();
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SwitchComponent);
@@ -19,7 +21,7 @@ describe('SwitchComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
