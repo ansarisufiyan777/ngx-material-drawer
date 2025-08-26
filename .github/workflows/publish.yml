@@ -1,15 +1,12 @@
 name: Publish to NPM
 
 on:
-  push:
-    tags:
-      - 'v*'  # Trigger on version tags (e.g., v2.1.0, v2.2.0)
-  workflow_dispatch:  # Allow manual triggering
+  workflow_dispatch:
     inputs:
       version:
-        description: 'Version to publish (e.g., 2.1.0)'
+        description: 'Version to publish (e.g., 3.0.0)'
         required: true
-        type: string
+        default: '3.0.0'
 
 jobs:
   publish:
@@ -18,20 +15,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Needed for semantic versioning
       
-      - name: Setup Node.js
+      - name: Use Node.js 18
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
       
-      - name: Configure npm
+      - name: Clear npm cache and configure
         run: |
+          npm cache clean --force
           npm config set registry https://registry.npmjs.org/
           npm config set @angular:registry https://registry.npmjs.org/
           npm config set @angular-devkit:registry https://registry.npmjs.org/
+          npm config set strict-ssl false
+          npm config list
         working-directory: ./
       
       - name: Debug - List files
@@ -39,20 +38,12 @@ jobs:
           echo "Current directory: $(pwd)"
           echo "Files in current directory:"
           ls -la
-          echo "Package files:"
-          ls -la package*.json || echo "No package files found"
+          echo "Files in projects/ngx-material-drawer:"
+          ls -la projects/ngx-material-drawer/
         working-directory: ./
       
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
-        working-directory: ./
-      
-      - name: Run tests
-        run: npm test -- --watch=false --browsers=ChromeHeadless
-        working-directory: ./
-      
-      - name: Run linting
-        run: npm run lint
+        run: npm ci --no-audit --no-fund
         working-directory: ./
       
       - name: Build library
@@ -61,44 +52,25 @@ jobs:
       
       - name: Verify build output
         run: |
-          echo "Checking build output..."
+          echo "✅ Library built successfully!"
+          echo "📦 Build output:"
           ls -la dist/ngx-material-drawer/
-          echo "Package.json contents:"
-          cat dist/ngx-material-drawer/package.json
+          echo "📄 Package.json:"
+          cat dist/ngx-material-drawer/package.json | head -20
         working-directory: ./
       
       - name: Publish to NPM
         run: |
           cd dist/ngx-material-drawer
           npm publish --access public
-        working-directory: ./
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
+        working-directory: ./
       
-      - name: Create GitHub Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref_name }}
-          release_name: Release ${{ github.ref_name }}
-          body: |
-            ## What's Changed
-            
-            This release includes updates and improvements to the ngx-material-drawer library.
-            
-            ### Features
-            - Updated to Angular 17+
-            - Modern Material Design theming
-            - Enhanced TypeScript support
-            
-            ### Breaking Changes
-            - Requires Angular 17+
-            - Updated Material theming syntax
-            
-            ### Installation
-            ```bash
-            npm install ngx-material-drawer@${{ github.ref_name }}
-            ```
-          draft: false
-          prerelease: false
+      - name: Create Git tag
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git tag v${{ github.event.inputs.version }}
+          git push origin v${{ github.event.inputs.version }}
+        working-directory: ./

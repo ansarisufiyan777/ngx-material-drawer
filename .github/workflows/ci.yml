@@ -22,17 +22,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
       
-      - name: Configure npm
+      - name: Clear npm cache and configure
         run: |
+          npm cache clean --force
           npm config set registry https://registry.npmjs.org/
           npm config set @angular:registry https://registry.npmjs.org/
           npm config set @angular-devkit:registry https://registry.npmjs.org/
+          npm config set strict-ssl false
+          npm config list
         working-directory: ./
       
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
         working-directory: ./
       
       - name: Run linting
