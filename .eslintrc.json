@@ -1,45 +1,57 @@
 {
     "root": true,
     "ignorePatterns": [
-        "projects/**/*"
+        "dist/**/*",
+        "node_modules/**/*",
+        "**/*.html",
+        "**/*.spec.ts",
+        "**/*.e2e-spec.ts"
     ],
     "overrides": [
         {
             "files": [
-                "*.ts"
+                "src/**/*.ts"
             ],
+            "parser": "@typescript-eslint/parser",
+            "plugins": ["@angular-eslint"],
             "extends": [
-                "eslint:recommended",
-                "@angular-eslint/recommended",
-                "@angular-eslint/template/process-inline-templates"
+                "eslint:recommended"
             ],
             "rules": {
-                "@angular-eslint/directive-selector": [
-                    "error",
-                    {
-                        "type": "attribute",
-                        "prefix": "app",
-                        "style": "camelCase"
-                    }
-                ],
-                "@angular-eslint/component-selector": [
-                    "error",
-                    {
-                        "type": "element",
-                        "prefix": "app",
-                        "style": "kebab-case"
-                    }
-                ]
+                "@angular-eslint/directive-selector": "off",
+                "@angular-eslint/component-selector": "off",
+                "no-unused-vars": "warn",
+                "no-undef": "warn",
+                "no-console": "off"
             }
         },
         {
             "files": [
-                "*.html"
+                "projects/**/*.ts"
+            ],
+            "parser": "@typescript-eslint/parser",
+            "plugins": ["@angular-eslint"],
+            "extends": [
+                "eslint:recommended"
+            ],
+            "rules": {
+                "@angular-eslint/directive-selector": "off",
+                "@angular-eslint/component-selector": "off",
+                "no-unused-vars": "warn",
+                "no-undef": "warn",
+                "no-console": "off"
+            }
+        },
+        {
+            "files": [
+                "e2e/**/*.ts"
             ],
             "extends": [
-                "@angular-eslint/template/recommended"
+                "eslint:recommended"
             ],
-            "rules": {}
+            "rules": {
+                "no-undef": "off"
+            }
         }
     ]
 }

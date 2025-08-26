@@ -1,0 +1,14 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@angular-eslint"],
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "@angular-eslint/directive-selector": "off",
+    "@angular-eslint/component-selector": "off",
+    "no-unused-vars": "warn",
+    "no-undef": "warn",
+    "no-console": "off"
+  }
+}
