@@ -27,8 +27,17 @@ jobs:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org'
       
+      - name: Debug - List files
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Files in current directory:"
+          ls -la
+          echo "Package files:"
+          ls -la package*.json || echo "No package files found"
+        working-directory: ./
+      
       - name: Install dependencies
-        run: npm ci
+        run: npm install
         working-directory: ./
       
       - name: Run tests

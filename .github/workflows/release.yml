@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - run: npm ci
+      - run: npm install
         working-directory: ./
       - run: npm run lint
         working-directory: ./
@@ -43,7 +43,7 @@ jobs:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org'
       
-      - run: npm ci
+      - run: npm install
         working-directory: ./
       
       - name: Build library
