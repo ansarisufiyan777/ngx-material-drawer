@@ -20,9 +20,13 @@ jobs:
           node-version: '18'
           cache: 'npm'
       - run: npm ci
+        working-directory: ./
       - run: npm run lint
+        working-directory: ./
       - run: npm test -- --watch=false --browsers=ChromeHeadless
+        working-directory: ./
       - run: npm run build:lib
+        working-directory: ./
 
   release:
     needs: test
@@ -42,9 +46,11 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       
       - run: npm ci
+        working-directory: ./
       
       - name: Build library
         run: npm run build:lib
+        working-directory: ./
       
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v3
