@@ -18,7 +18,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - run: npm install
+          registry-url: 'https://registry.npmjs.org'
+      - run: |
+          npm config set registry https://registry.npmjs.org/
+          npm config set @angular:registry https://registry.npmjs.org/
+          npm config set @angular-devkit:registry https://registry.npmjs.org/
+        working-directory: ./
+      - run: npm install --no-audit --no-fund
         working-directory: ./
       - run: npm run lint
         working-directory: ./
@@ -43,7 +49,13 @@ jobs:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org'
       
-      - run: npm install
+      - run: |
+          npm config set registry https://registry.npmjs.org/
+          npm config set @angular:registry https://registry.npmjs.org/
+          npm config set @angular-devkit:registry https://registry.npmjs.org/
+        working-directory: ./
+      
+      - run: npm install --no-audit --no-fund
         working-directory: ./
       
       - name: Build library

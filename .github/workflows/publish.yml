@@ -27,6 +27,13 @@ jobs:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org'
       
+      - name: Configure npm
+        run: |
+          npm config set registry https://registry.npmjs.org/
+          npm config set @angular:registry https://registry.npmjs.org/
+          npm config set @angular-devkit:registry https://registry.npmjs.org/
+        working-directory: ./
+      
       - name: Debug - List files
         run: |
           echo "Current directory: $(pwd)"
@@ -37,7 +44,7 @@ jobs:
         working-directory: ./
       
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-audit --no-fund
         working-directory: ./
       
       - name: Run tests
